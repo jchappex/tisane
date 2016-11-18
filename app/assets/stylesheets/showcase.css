@@ -1,0 +1,220 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+                                                        /******************** GENERAL SIZES ********************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+html, body {
+height: 100%;
+width: 100%;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+.header-top{
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat:no-repeat;background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.head-idea {
+  background-image:url("/elem/photo-header-idea.jpg");
+}
+.head-legend {
+  background-image:url("/elem/photo-header-legend.jpg");
+}
+
+
+.section-all{
+  position: relative;
+  background-color: white;
+  background-image: url("/elem/illu-idea.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 400px;
+  z-index: 10;
+
+}
+
+
+.bloc-center{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+.sect-overlap{
+  position: relative;
+  margin-top:3%;
+  margin-bottom: 4%;
+}
+
+.sect-overlap .bloctext{
+  position: absolute;
+  top: 0;
+  z-index:100;
+}
+
+.sect-overlap img{
+top: 0;
+width: 100%;
+}
+
+.sect-overlap p {
+position: absolute;
+ z-index:10;
+ font-family: 'Roboto', sans-serif;
+ font-size: 20px;
+ font-weight: 300;
+text-align: left;
+z-index: 200;
+}
+
+.sect-overlap .text-center-align {
+text-align: center;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+.wrapper
+{
+
+}
+
+.scrollme
+{
+
+}
+
+.animateme
+{
+
+}
+
+
+                                                                    /*  NORMAL DEVICE ONLY*/
+
+
+@media screen and (min-width: 989px) {
+.img-top img{
+position: relative;
+position: fixed;
+top:45px; left: 0; right:0;
+margin: auto;
+z-index: 1;
+}
+.text-vertical-center p {
+position: fixed;
+margin: 0;
+font-size: 55px;
+font-family: 'Didot LT Std Bold Italic';
+color: white;
+}
+.paraxify{
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
+}
+
+.img-fluid{
+position:relative;
+top:-2vw;
+overflow:hidden;
+width:100%;
+z-index:2
+}
+}
+
+
+
+                                                                          /* MOBILE SIZE ONLY*/
+@media screen and (max-width: 988px) {
+
+
+  .img-top img{
+    position: absolute;
+    top:45px;left: 0; right:0;
+    margin: auto;
+  }
+
+
+  .text-vertical-center p {
+      margin: 0;
+      padding-left: 26%;
+      padding-right: 26%;
+      font-size: 3.5vw;
+      font-family: 'Didot LT Std Italic';
+      color: white;
+  }
+}
+
+                                                        /******************** HOME ********************/
+
+.home-links{
+  position: relative;
+  top: 35vh;
+}
+
+.title img{
+	opacity: 0.9;
+	height: 150px;
+}
+
+.btn-div{
+  margin-top: 20px;
+  left: -45px;
+}

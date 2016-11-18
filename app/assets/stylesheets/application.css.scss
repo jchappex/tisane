@@ -1,0 +1,351 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ //= require bootstrap-select
+ *= require rails_bootstrap_forms
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.logo_img_work{
+  float: none;
+  left: -50px;
+  top: 55px;
+  width: 250px;
+}
+
+.title_work{
+ top: 80px;
+ font-size: 25px;
+ font-family: 'Didot LT Std Italic';
+}
+
+.div-work{
+  position: relative;
+  top:25vh;
+}
+
+.pick{
+  padding-bottom: 10px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+
+  transition-timing-function: ease-in;
+
+/* Quick on the way out */
+transition: 0.6s;
+  opacity: 0.8;
+p{
+  display: none;
+    opacity: 0.1;
+}
+span{
+  font-size: 30px;
+  font-family: 'Futura Condensed Light';
+  text-transform: uppercase;
+}
+}
+
+.pick:hover{
+  padding-bottom: 20px;
+  opacity:1.6;
+  p{
+    font-family: 'Didot LT Std Italic';
+    font-size: 20px;
+    margin-bottom: 2px;
+    display: block;
+    transition: 1s;
+      opacity: 1.9;
+  }
+}
+
+
+.to-margin{
+	padding-top: 6%;
+	margin-left: 8%;
+}
+
+*{
+
+margin:0;
+padding:0;
+
+}
+
+body, html{height:100%;}
+
+#layout-main-page{
+  min-height:100%;
+margin:0 auto;
+position:relative;
+}
+
+.footer-app{
+	border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+	background: white;
+	position:absolute;
+	bottom:-200px;
+	width:100%;
+	padding-top:30px;
+  margin-bottom: 310px;
+	height:70px;
+  z-index: 100;
+	.fixed-middle{
+		float: left;
+
+		a{
+		color: black;
+    font-size: 1vh;
+		font-style: normal;
+		padding-right: 3vw;
+	}
+	a:hover{
+		text-decoration:underline;
+	}
+	}
+}
+
+.footer-home{
+	display: none;
+	border-top: 1px solid #b6a083;
+	background-color: white ;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	padding-top:30px;
+	height:70px;
+	.fixed_right{
+		padding-bottom: 30px;
+		padding-left: 50px;
+		float: left;
+
+		a{
+		color: #b6a083;
+		font-style: normal;
+		padding-right: 50px;
+	}
+	a:hover{
+		text-decoration: none;
+		font-weight: bold;
+	}
+	}
+}
+
+.hover-footer:hover{
+  .footer-home{
+    display: block;
+  }
+}
+
+.hover-rect{
+  position: relative;
+}
+
+#main{
+	margin-left: 17em;
+	padding: 1em;
+	background: white;
+}
+
+.top-title-menu{
+  position: relative;
+  z-index: 300;
+  left: 88px;
+  top: 35px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+.fix-menu{
+	position: fixed;
+	z-index: 9999;
+}
+
+.line-menu{
+	z-index: 10;
+	display: list-item;
+  background-color: black;
+  height: 3px;
+  width: 30px;
+  font-size: 2px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 15px;
+	margin-top: 10px;
+  opacity: .7;
+}
+
+.class-menu{
+	position: relative;
+	z-index: 10;
+	display: block;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+li:hover .class-menu > .elem-one{
+	animation: lag-down 0.2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes lag-down {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+		-webkit-transform: translateY(13px);
+    transform: translateY(13px);
+
+  }
+}
+
+li:hover .class-menu > .elem-three{
+	animation: lag-up 0.2s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes lag-up {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+		-webkit-transform: translateY(-13px);
+    transform: translateY(-13px);
+  }
+}
+
+#menu{
+    /*height: 21px;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+}
+
+
+#menu li a:hover {background-color: none;}
+#menu .sousMenu{
+		position: absolute;
+		top: 0px;
+		z-index: 1;
+    display: none;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 1px;
+    line-height: 2em;
+    font-size: 1.5em;
+    font-family: 'Futura Condensed Medium';
+    background-color: rgba(255,255,255,0.9);
+    /*opacity: 0.5;*/
+    width: 290px;
+    height: 690px;
+    padding-left: 50px;
+    padding-top: 110px;
+    border: 0;
+}
+#menu .sousMenu li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+#menu .sousMenu .limen a:link, #menu .sousMenu .limen a:visited{
+    display: block;
+    font-family: 'Futura Condensed Medium';
+		font-size: 25px;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+        transition: 0.4s;
+}
+
+#menu .sousMenu .btn-langue a:link, #menu .sousMenu .limen a:visited{
+    display: block;
+    font-family: 'Futura Condensed Medium';
+    margin-bottom: 25px;
+    border: 0;
+    text-decoration: none;
+        transition: 0.3s;
+}
+
+#menu .sousMenu .log-buttons a:link, #menu .sousMenu .limen a:visited{
+    font-family: 'Futura Condensed Medium';
+    text-decoration: none;
+		font-size: 18px;
+    margin: 0;
+    border: 0;
+        transition: 0.3s;
+}
+
+#menu .sousMenu li a:hover{
+    background-image: none;
+		color: #b6a083;
+}
+#menu li:hover > .sousMenu {
+    display: block;
+}
+
+.menu-button{
+	margin-top: 27px;
+}
+
+  [class*="col-"], footer {
+  text-align: center;
+}
+
+.depot_form{
+	fieldset{
+		background: #efe;
+	legend{
+		color: #dfd;
+		background: #141;
+		padding: 0.2em 1em;
+	}
+}
+
+.form{
+	label{
+    background-color: black;
+		width: 5em;
+		float: left;
+		text-align: right;
+		padding-top: 0.2em;
+		margin-right: 0.1em;
+		display: block;
+	}
+
+	select, textarea, input{
+		margin-left: 4em;
+	}
+
+	.submit{
+		margin-left: 4em;
+	}
+
+	br{
+		display: none;
+	}
+}
+}

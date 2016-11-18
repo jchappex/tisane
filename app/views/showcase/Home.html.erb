@@ -1,0 +1,43 @@
+<% content_for :title, "Accueil" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8"/>
+		<title>LE BÉNÉFIQUE</title>
+	   <%= javascript_include_tag "jquery.vide.js" %>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script> $(document).ready(function () { $('body').hide().fadeIn(1500).delay(6000)});</script>
+	</head>
+
+	<header>
+
+	</header>
+	<body data-vide-bg="/elem/le_benefique_movie.mp4">
+		<section class = "home-links container">
+			<!--<h1><img src="Logo.png"></h1>-->
+				<img class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" src="/elem/logo2.png" alt="logo Le Bénéfique"/>
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-5 col-sm-4 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-3 col-lg-offset-5 btn-div">
+						<%= link_to store_path do
+							image_tag("/elem/Btn-discover.png", onmouseover: "this.src='#{asset_path('/elem/Btn-discover-hove.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-discover.png')}'", width: '132')
+					end %>
+						<%= link_to video_path do
+    					image_tag("/elem/Btn-play.png", onmouseover: "this.src='#{asset_path('/elem/Btn-play-hovere.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-play.png')}'", width: '43')
+					end %>
+				</div>
+			</div>
+		</section>
+		<!--<script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="bootstrap/js/mesfonctions.js"></script>-->
+		<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+		<script src="bootstrap/js/jquery.vide.js"></script>
+		<script>
+		 // $(document).ready(function () {
+		 //   $(document.body).vide('video/ocean'); // Non declarative initialization
+		 //
+		 //   var instance = $(document.body).data('vide'); // Get the instance
+		 //   var video = instance.getVideoObject(); // Get the video object
+		 //   instance.destroy(); // Destroy instance
+		 // });
+	 </script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.col-center{
+  margin:0 auto;
+}
+
+.all{
+  padding: 90px;
+}
+
+#map{
+  max-width: 1200px;
+  height: 600px;
+}
+
+ #map img {
+   max-width: none;
+ }
+ #map label {
+   width: auto; display:inline;
+ }

@@ -1,0 +1,42 @@
+<div class="to-margin">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong> title:</strong>
+  <%= @product. title %>
+</p>
+<p>
+  <strong> nom latin</strong>
+  <%= @product.nomlatin %>
+</p>
+<p>
+  <strong> Provenance</strong>
+  <%= @product.provenance %>
+</p>
+<p>
+  <strong> propriétes</strong>
+  <%= @product.proprietes %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @product.image_url %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>product_line:</strong>
+  <%= @product.product_line %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+</div>

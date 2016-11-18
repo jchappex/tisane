@@ -1,0 +1,56 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end%>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="head-div title-carts col-xs-3 col-xs-offset-5 col-lg-3 col-lg-offset-5">
+        <a href="/showcase/Home"> <%=image_tag("logo.png", :class => 'logo-img-carts')%></a>
+        <h1 style="font-family: 'Didot LT Std Italic';"> Votre panier </h1>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="cart-section">
+  <div class="container">
+      <div class=" row col-sm-5 col-sm-offset-0 col-md-7 col-md-offset-0 col-lg-7 col-lg-offset-0">
+        <h2 style="float:left; position:relative;top:-40px;"> Panier </h2>
+        <hr style="height:1px; width: 100%;border:none;color:#333;background-color:#333;">
+        <table class="test">
+          <tr>
+            <th id="nothing"> </th>
+            <th id="article">Article</th>
+            <th id="quantite">Quantite</th>
+            <th id="prix-article">Prix article</th>
+            <th id="prix-total">Prix total</th>
+          </tr>
+          <% @cart.line_items.each do |item| %>
+          <tr>
+            <td headers="nothing"> <%= image_tag(item.product.image_url, :class => 'the_img') %></td>
+            <td headers="article">  <%= item.product.title %><br/><%= link_to 'Supprimer', item, :method => :delete, :confirm=>'Are you Sure?' %></td>
+            <td headers="quantite"> <%= item.quantity%></td>
+            <td headers="prix-article"><%=number_to_currency(item.product.price)%>&nbsp</td>
+            <td headers="prix-total"><%= number_to_currency(item.total_price)%></td>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="total-and-checkout col-sm-3 col-sm-offset-8 col-lg-3 col-lg-offset-8">
+        <h3 style="float:left; position:relative;top:-40px; left:220px; top:-50px;"> Résumé </h2>
+        <hr style="height:800px; width: 1px;border:none;color:#333;background-color:#333; position:absolute; top: -60px;">
+        <tr class="total_line">
+          <td colspan="2">Total</td>
+          <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+        </tr>
+        <br />
+        <%= link_to 'Empty cart', @cart, method: :delete, data: {confirm:'Are you sure?'} %> |
+        <%= link_to 'Back', store_path %>
+          <%= button_to "Checkout", new_order_path, method: :get %>
+      </div>
+    </div>
+  </div>
+</section>

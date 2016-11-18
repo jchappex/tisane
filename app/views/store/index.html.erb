@@ -1,0 +1,212 @@
+<html>
+<head>
+<style media="screen">
+html, body {
+height: 100%;
+width: 100%;
+background: url(../../elem/illu-legend.jpg) no-repeat;
+background-position:top;
+}
+</style>
+</head>
+<body>
+<% if notice %>
+<p id="notice"><%=notice%></p>
+<%end %>
+
+<div class="cart-count-link">
+<%= link_to image_tag("/elem/shopping-bag-gold.png", :class =>"panier-header-store"), current_cart %>
+<ul class="nav pull-right">
+  <div class="cart-count-store">
+    <% if current_cart %>
+      <li><%= current_cart.cart_count%></li>
+    <% end %>
+  </div>
+</ul>
+</div>
+<section class="product_section_1">
+  <header id="top" class="header-store">
+    <div class="img-top container">
+      <a href="/showcase/Home"> <p><%=image_tag("logo.png", :class => 'logo_img col-xs-3 col-xs-offset-5 col-sm-3 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-3 col-lg-offset-5')%></p></a>
+      <p class="title col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5"> nos collections</p>
+            <div class="img_tasse col-xs-2 col-xs-offset-6 col-sm-2 col-sm-offset-6 col-md-2 col-md-offset-6 col-lg-2 col-lg-offset-6"><%=image_tag("tasse-section-1.png")%></div>
+    </div>
+    <div class="block-sultan container">
+      <h1 class="col-xs-5 col-xs-offset-5 col-sm-5 col-sm-offset-5 col-md-4 col-md-offset-5 col-lg-3 col-lg-offset-5 line_title">LES INFUSIONS DU SULTAN</h1>
+      <div class="row">
+        <div class="img_back_soli col-xs-10 col-xs-offset-1 col-lg-9 col-lg-offset-1"><%=image_tag("photo-back-section-1.png")%></div>
+        <div class="illu_front col-xs-5 col-xs-offset-7 col-lg-4 col-lg-offset-7"><%=image_tag("illu-front-section-1.png")%></div>
+    </div>
+    <p class="txt_soli col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2">Les infusions du sultan sont cueillies à la main, de manière raisonnée par le dernier peuple nomade de Turquie. Les villageois perpétuent ainsi leur mode de vie traditionnel et protège la biodiversité des régions concernés. Découvrez nos infusions de fleur de lavande, la sauge de montagne, le thym ou le tilleul.</p>
+  </div>
+</header>
+<div class="container product-container">
+  <div class="row prod-div col-sm-10 col-sm-offset-2 col col-lg-9 col-lg-offset-1">
+    <% @type1.each_with_index do |product, index| %>
+      <div class="product-tile">
+        <div class="entry col-sm-5 col-sm-offset-0 col col-lg-3 col-lg-offset-1">
+          <h3 class="product_title"><%= product.title %></h3>
+          <div class="product_img img-responsive">
+            <%= image_tag(product.image_url, :class => 'the_img') %>
+            <%= link_to( '#',class: %w(poplight discover), data: { rel: "popup_type1#{index}"}) do%>
+            <%= image_tag("/elem/decouvrir-shop.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-shop-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir-shop.png')}'", :style => "width:135px") %>
+              <% end %>
+              <div id="popup_type1<%= index %>" class="popup_block container">
+                <div class="img-top container">
+                  <p><%=image_tag("logo.png", :class => 'logo_img col-xs-3 col-xs-offset-5 col-sm-3 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-3 col-lg-offset-5')%></p>
+                  <p class="title-pop col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5"> Infusion</p>
+                </div>
+                <%= image_tag(product.image_url, :class => 'popup-img col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1') %>
+                <div class="popup-product-zone col-xs-4 col-xs-offset-7 col-sm-4 col-sm-offset-7 col-md-4 col-md-offset-7 col-lg-4 col-lg-offset-7">
+	                 <h2 class="popup-title"><%=product.title%><p class="popup-nomlatin"><%=product.nomlatin%></p></h2>
+                     <%# <p class="popup-provenance"><%= sanitize(product.provenance, :class =>'popup-provenance')</p>%>
+                    <p class="popup-provenance"> Certifié biologique par Ecocert </p>
+                    <p class="popup-description"><%= sanitize(product.description, :class =>'popup-description')%></p>
+                    <h4 class="popup-proprietes-title"> PROPRIÉTÉS </h4>
+                    <p class="popup-proprietes"><%= sanitize(product.proprietes, :class =>'popup-proprietes')%></p>
+                    <div class="popup-price-and-add">
+                      <span class="popup-price"><%=number_to_currency(product.price)%></span><br/>
+                      <%= form_for(line_items_path(:quantity), remote: true) do |form|%>
+                      <p>
+                        <%= form.label :Qté%>
+                        <%= form.select :quantity, (1..10) %>
+                      <p>
+                      <% end %>
+                      <%= link_to image_tag("/elem/Btn-add.png", onmouseover: "this.src='#{asset_path('/elem/Btn-add-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-add.png')}'",:class =>"popup-add"), line_items_path(product_id: product), remote: true, :method => :post, :class => "popup-add" %>
+                    </div>
+                </div>
+                <div class="popup-engagements">
+                  <hr>
+                  <p><b> ENGAGEMENTS LE BÉNÉFIQUE</b><p>
+                  <br>
+                  <p><b>Choix du lieu de récolte:</b> Obtention de l’autorisation de récolte et Validation du respect du cahier des charges d’Ecocert</p>
+                  <p><b>Choix des plantes:</b>  Soumission des spécimens botaniques retenus à des conservatoires botaniques pour authentification.</p>
+                  <p><b>Séchage traditionnel:</b> Séchage traditionnel des tiges étalées en fines couches sur les claies</p>
+                  <p><b>Conditionnement:</b>  Assemblage artisanal des tiges et des drapeaux et étiquetage assurant la traçabilité du produit</p>
+                  <p><b>Planication des cueillettes:</b>  Récolte de données sur les conditions environnementales et recherches sur la morphologie de l’espèce et sur ses populations.</p>
+                  <p><b>Récolte manuelle:</b> Cueillette effectuées à la main tige par tige dans le respect de la plante et de son environnement</p>
+                  <p><b>Traitement spécique:</b> Traitement au CO2 , selon les normes d’Ecocert, en cas d’infestation par des insectes</p>
+                </div>
+              </div>
+          </div>
+          <div class="product_description">
+            <%= sanitize(product.description)%>
+            <div class="price_line">
+              <span class="price"><%=number_to_currency(product.price)%></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%end%>
+  </div>
+</div>
+</section>
+<section class="product_section_2">
+  <header id="top" class="header-store">
+    <div class="img-top container">
+      <div class="img_tasse col-xs-2 col-xs-offset-6 col-sm-2 col-sm-offset-6 col-md-2 col-md-offset-6 col-lg-2 col-lg-offset-6"><%=image_tag("tasse-section-2.png")%></div>
+    </div>
+    <div class="block-sultan container">
+      <h1 class="col-xs-5 col-xs-offset-5 col-sm-5 col-sm-offset-5 col-md-4 col-md-offset-5 col-lg-3 col-lg-offset-5 line_title">LES INFUSIONS DU ROI</h1>
+      <div class="row">
+        <div class="img_back_françois col-xs-10 col-xs-offset-0 col-sm-10 col-sm-offset-0 col-md-9 col-md-offset-2 col-lg-9 col-lg-offset-2"><%=image_tag("photo-back-section-2.jpg")%></div>
+        <div class="illu_front col-xs-6 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1"><%=image_tag("illu-front-section-2.jpg")%></div>
+      </div>
+      <p class="txt_soli col-xs-4 col-xs-offset-6 col-sm-4 col-sm-offset-6 col-md-5 col-md-offset-6 col-lg-5 col-lg-offset-6"> Les infusions dites du Roi François 1er sont cueillies en France. Nos plantes poussent naturellement dans les montagnes des Vosges et sont issues de la cueillette sauvage. Découvrez nos infusions de fleur de sureau, le pistil de coucou, la reine des prés, l’achillée mille feuille ou le trèfle rouge.</p>
+    </div>
+  </header>
+  <div class="container product-container">
+  <div class="row prod-div col-sm-9 col-sm-offset-2 col col-lg-9 col-lg-offset-1">
+    <% @type2.each_with_index do |product, index| %>
+    <div class="product-tile">
+      <div class="entry col-sm-5 col-sm-offset-0 col col-lg-3 col-lg-offset-1">
+        <h3 class="product_title"><%= product.title %></h3>
+        <div class="product_img img-responsive">
+          <%= image_tag(product.image_url, :class => 'the_img') %>
+          <%= link_to( '#',class: %w(poplight discover), data: { rel: "popup_type1#{index}"}) do%>
+          <%= image_tag("/elem/decouvrir-shop.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-shop-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir-shop.png')}'", :style => "width:135px") %>
+            <% end %>
+            <div id="popup_type2<%= index %>" class="popup_block container">
+              <div class="img-top container">
+                <p><%=image_tag("logo.png", :class => 'logo_img col-xs-3 col-xs-offset-5 col-sm-3 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-3 col-lg-offset-5')%></p>
+                <p class="title-pop col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5"> Infusion</p>
+              </div>
+              <div class="container">
+              <%= image_tag(product.image_url, :class => 'popup-img col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1') %>
+              <div class="popup-product-zone col-xs-4 col-xs-offset-7 col-sm-4 col-sm-offset-7 col-md-4 col-md-offset-7 col-lg-4 col-lg-offset-7">
+                 <h2 class="popup-title"><%=product.title%><p class="popup-nomlatin"><%=product.nomlatin%></p></h2>
+                   <p class="popup-provenance"><%= sanitize(product.provenance, :class =>'popup-provenance')%></p>
+                  <p class="popup-description"><%= sanitize(product.description, :class =>'popup-description')%></p>
+                  <h4 class="popup-proprietes-title">PROPRIÉTÉS </h4>
+                  <p class="popup-proprietes"><%= sanitize(product.proprietes, :class =>'popup-proprietes')%></p>
+                  <div class="popup-price-and-add">
+                    <span class="popup-price"><%=number_to_currency(product.price)%></span><br/>
+                    <%= form_for(line_items_path(:set_quantity)) do |form|%>
+                    <p>
+                      <%= form.label :quantity%>
+                      <%= form.select :quantity, (1..10) %>
+                    <p>
+                    <% end %>
+                    <%= link_to image_tag("/elem/Btn-add.png", :class =>"popup-add"), line_items_path(product_id: product), remote: true, :method => :post, :class => "popup-add" %>
+                  </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="product_description">
+          <%= sanitize(product.description)%>
+          <div class="price_line">
+            <span class="price"><%=number_to_currency(product.price)%></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%end%>
+  </div>
+</div>
+</section>
+<script>
+
+jQuery(function($){
+
+//Lorsque vous cliquez sur un lien de la classe poplight
+$('a.poplight').on('click', function() {
+  var popID = $(this).data('rel'); //Trouver la pop-up correspondante
+  var popWidth = $(this).data('width'); //Trouver la largeur
+
+  //Faire apparaitre la pop-up et ajouter le bouton de fermeture
+  $('#' + popID).fadeIn().css({ 'width': popWidth}).prepend('<a href="#" class="close"><img src="/elem/croix.png" class="btn_close" title="Close Window" alt="Close" style="width:30px; position:relative;top:40px; right:30px;" /></a>');
+
+  //Récupération du margin, qui permettra de centrer la fenêtre - on ajuste de 80px en conformité avec le CSS
+  var popMargTop = ($('#' + popID).height() + 80) / 2;
+  var popMargLeft = ($('#' + popID).width() + 80) / 2;
+
+  //Apply Margin to Popup
+  $('#' + popID).css({
+    'margin-top' : -popMargTop,
+    'margin-left' : -popMargLeft
+  });
+
+  //Apparition du fond - .css({'filter' : 'alpha(opacity=80)'}) pour corriger les bogues d'anciennes versions de IE
+  $('body').append('<div id="fade"></div>');
+  $('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn()
+
+  return false;
+});
+
+
+//Close Popups and Fade Layer
+$('body').on('click', 'a.close, #fade', function() { //Au clic sur le body...
+  $('#fade , .popup_block').fadeOut(function() {
+    $('#fade, a.close').remove();
+}); //...ils disparaissent ensemble
+
+  return false;
+});
+
+
+});
+
+</script>
+</body>
+</html>

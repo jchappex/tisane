@@ -1,0 +1,53 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.test{
+  margin-bottom: 80px;
+}
+.cart-section{
+  font-family: 'Futura Condensed Medium';
+}
+
+.head-div h1{
+  font-size: 25px;
+}
+
+.head-div{
+  margin-bottom: 100px;
+}
+
+.logo-img-carts{
+  width: 250px;
+}
+
+.title-carts{
+  top: 50px;
+  font-size: 25px;
+  display: block;
+}
+
+
+.each-elems{
+  margin-bottom: 50px;
+}
+
+
+table.test td {
+    margin: 12px 12px 12px 12px;
+    padding: 20px 20px 20px 12px;
+}
+table.test {
+  border-collapse: separate;
+  border-spacing: 20px;
+  *border-collapse: expression('separate', cellSpacing = '20px');
+}
+
+.total-and-checkout{
+  position: absolute;
+  right: 0;
+  top: 280px;
+  left: -80px;
+  font-size: 18px;
+}

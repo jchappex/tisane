@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Store Locator | Le Bénéfique</title>
+ <style>
+ *{margin:0;padding:0;}
+ #map-canvas{position:absolute;top:50%;left:40%;margin:-250px 0 0 -400px;width:1600px;height:660px;}#map.mapFull{left:0;top:0;right:0;bottom:0;margin:0;width:auto;height:auto;}
+ .dropdowns{
+   position: absolute;
+   top: 15%;
+   left:40%;
+ }
+ </style>
+</head>
+
+<body class="page page-id-248 page-template-default group-blog masthead-fixed full-width singular">
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '384174745065524',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/fr_FR/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+<div id="main-content" class="main-content">
+		<div id="content" class="site-content" role="main">
+
+			<article id="post-1255" class="post-1255 post type-post status-publish format-standard hentry category-vente-en">
+
+
+
+	<div class="dropdowns">
+      <ul>
+        <select  id="regions">
+          <option class="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+          <option class="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+          <option class="Bretagne">Bretagne</option>
+          <option class="Centre-Val de Loire">Centre-Val de Loire</option>
+          <option class="Corse">Corse</option>
+          <option class="Etranger">Etranger</option>
+          <option class="Grand-Est">Grand-Est</option>
+          <option class="Hauts-de-France">Hauts-de-France</option>
+          <option class="Ile-de-France">Ile-de-France</option>
+          <option class="Normandie">Normandie</option>
+          <option class="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+          <option class=" Occitanie"> Occitanie</option>
+          <option class="Pays-de-la-Loire">Pays-de-la-Loire</option>
+          <option class="Provence-Alpes-Côte d'azur">Provence-Alpes-Côte d'azur</option>
+          <option class="Etranger">Etranger</option>
+        </select>
+      </ul>
+
+
+			<ul>
+        <select id = "myList3" onchange="dropdownChanged();">
+          <option class="gauche petit" adresse="12 avenue Maurice Jouet 78340 Les Clayes-sous-Bois" nom="Adresse Gourmande"  type="<i>Delicatessen </option>" site="http://www.epicerie-gourmande.fr/" telephone="0139380176 info@epicerie-gourmande.fr"    latt="48.822276" lon="1.989617">Adresse Gourmande</option>
+          <option class="gauche petit" adresse="6 rue du Château d Eau 75010 Paris"                 nom="Atelier Couronnes"  type="Concept store"        site="http://www.atelier-couronnes.com/" telephone="0140370354 contact@atelier-couronnes.com" latt="48.869753" lon="2.361644">Atelier Couronnes</option>
+          <option class="gauche petit" adresse="2, rue Gabriel Laumain 75010 Paris"                 nom="Balibert"           type="<i>Delicatessen </option>" site="http://www.balibert.com"           telephone="0953263282 contact@balibert.com"          latt="48.873591" lon="2.349129">Balibert         </option>
+          <option class="gauche petit" adresse="17 Rue des Petites écuries 75010 Paris"             nom="Bulma"              type="Restaurant"           site=" "                                 telephone="01 47 70 17 88"                           latt="48.8733286"lon="2.352166917">Bulma          </option>
+          <option class="gauche petit" adresse="37 boulevard de la Chapelle 75010 Paris"            nom="Café du Théâtre des Bouffes du Nord"  type="Café/Theatre" site=" "                       telephone="01 46 07 33 00"                           latt="48.884422" lon="2.358793">Café du Théâtre des Bouffes du Nord </option>
+          <option class="gauche petit" adresse="58 rue Faubourg Poissonnière 75010 Paris"           nom="Café Pinson"        type="Café"                site="http://www.cafepinson.fr/"          telephone="0145235942 "                              latt="48.875285" lon="2.348448">Café Pinson      </option>
+          <option class='gauche petit' adresse='22 rue de Jessaint 75018 Paris'                     nom='Cocoboheme'         type='<i>Concept store</option>' site='http://www.cocoboheme.fr/'          telephone='+ 33 (0) 1 42 62 40 60 contact@cocoboheme.com' latt='48.885129' lon='2.355811'>Cocoboheme Concept store</option>
+          <option class='gauche petit' adresse='39 Rue Charonne 75013 PARIS' nom='Dr. HAUTSCHKA' type='SPA' site='http://www.lamaisondrhauschka.fr/'  telephone='070-4680-3019 castyou@naver.com' latt='48.8534711' lon='2.376399'>Dr. HAUTSCHKA <i>SPA</i></option>
+          <option class='gauche petit' adresse='39 RUE STE CROIX DE LA BRETONNERIE 75004 PARIS' nom='FLEUX' type='Concept stores' site='http://www.fleux.com'  telephone='+ 33 (0)1 53 00 93 30' latt='48.858736' lon='2.353994'>FLEUX <i>Concept stores</i></option>
+          <option class='gauche petit' adresse='4 rue de Bourbon le Château - 75006 PARIS' nom='Galerie Salon' type='Concept store' site='http://www.galeriesalon.fr'  telephone='+33 1 44 27 00 81galeriesalon@gmail.com' latt='48.853976' lon='2.336288'>Galerie Salon <i>Concept store</i></option>
+          <option class='gauche petit' adresse='9 RUE FROCHOT 75009 PARIS' nom='Hotel Le Pigalle' type='Hotel' site=''  telephone='0148783714 welcome@lepigalle.paris' latt='48.881805' lon='2.337181'>Hotel Le Pigalle <i>Hotel</i></option>
+          <option class='gauche petit' adresse='17 rue du capitaine Dreyfus 93100 MONTREUIL' nom='INTUITIVE' type='Concept store' site='http://www.intuitivedeco.com/'  telephone='01 48 70 79 20' latt='48.859216' lon='2.438798'>INTUITIVE <i>Concept store</i></option>
+          <option class='gauche petit' adresse='34 Rue des Petites écuries 75010 PARIS' nom='La Ruche' type='Concept store' site='http://www.laruchedesign.fr/'  telephone='01 44 83 94 47' latt='48.874063' lon='2.350832'>La Ruche <i>Concept store</i></option>
+          <option class='gauche petit' adresse='6 bis Rue des Recollets 75010 PARIS' nom='Les Enfants gâtés' type='Delicatessen' site=''  telephone='01 43 55 40 55' latt='48.8744607' lon='2.3623041'>Les Enfants gâtés <i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='9 Rue des Recollets 75010 PARIS' nom='Les Enfants perdus' type='Bar-Restaurant' site=''  telephone='01 44 39 81 00' latt='48.8743868' lon='2.3620456'>Les Enfants perdus <i>Bar-Restaurant</i></option>
+          <option class='gauche petit' adresse='24, rue Saint Sabin, 75011 Paris' nom='Les Inrocks store' type='Online shop ' site='http://boutique.lesinrocks.com'  telephone='06 12 08 76 19 contact@lesfaconniers.com' latt='48.856426' lon='2.371377'>Les Inrocks store <i>Online shop</i> </option>
+          <option class='gauche petit' adresse='12, esplanade nathalie sarraute en face du 39, rue pajol 75018 Paris' nom='Les Petites Gouttes' type='Bistrot' site='http://www.lespetitesgouttes.com'  telephone='+33 1 42 05 20 8 marc@lespetitesgouttes.com' latt='48.888219' lon='2.362650'>Les Petites Gouttes <i>Bistrot</i></option>
+          <option class='gauche petit' adresse='6bis Avenue des Bonshommes 95290 L&#39Isle Adam' nom='lilybulle' type='Concept store' site=''  telephone='01 34 69 13 65' latt='49.111322' lon='2.217933'>lilybulle <i>Concept store</i></option>
+          <option class='gauche petit' adresse='3 Rue Richer 75009 Paris' nom='L&#8217;office' type='Restaurant' site=''  telephone='01 47 70 67 31' latt='48.874164' lon='2.347350'>L&#8217;office <i>Restaurant</i></option>
+          <option class='gauche petit' adresse='90, Bd St Germain 75005 Paris' nom='Loulou' type='Café restaurant' site='http://www.louloufriendlydiner.com'  telephone='01 46 34 86 64' latt='48.851273' lon='2.344735'>Loulou <i>Café restaurant</i></option>
+          <option class='gauche petit' adresse='46, rue de Levis 75017 PARIS' nom='MACIS' type='<i>Delicatessen</i>' site=''  telephone='0142675488' latt='48.883883 ' lon='2.314166'>MACIS <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='47 Rue Jean-Baptiste Pigalle 75019 Paris' nom='Peco Peco' type='Restaurant' site=''  telephone='01 53 16 19 84 contact@pecopeco.fr' latt='48.880463' lon='2.334532'>Peco Peco <i>Restaurant</i></option>
+          <option class='gauche petit' adresse='52, rue du Faubourg Saint Denis 75010 Paris' nom='Reastaurant 52' type='Néo-bistro' site=''  telephone='prettycerise@hotmail.com 0673659921' latt='48.872147' lon='2.354031'>Reastaurant 52 <i>Néo-bistro</i></option>
+          <option class='gauche petit' adresse='2, rue Richer 75009 Paris' nom='Restaurant Richer' type='Restaurant' site=''  telephone='prettycerise@hotmail.com 0673659921' latt='48.874336' lon='2.347659'>Restaurant Richer <i>Restaurant</i></option>
+          <option class='gauche petit' adresse='10 Rue Mandart 75002 Paris' nom='Rossi&#038;Co' type='Restaurant' site=''  telephone='01 44 75 51 96' latt='48.8657439' lon='2.3458021'>Rossi&#038;Co <i>Restaurant</option>
+          <option class='gauche petit' adresse='1 rue Charles François Dupuis 75003 Paris' nom='Season' type='Café- Bar' site=''  telephone='0686004790 cathy.faivre.closier@gmail.com' latt='48.865332' lon='2.362675'>Season <i>Café- Bar</option>
+          <option class='gauche petit' adresse='11 rue Molière - 75001 Paris' nom='Temple Noble Art' type='Club' site='http://temple-nobleart.fr/'  telephone='+33(0)1 49 27 03 11' latt='48.865909' lon='2.335782'>Temple Noble Art <i>Club</option>
+          <option class='gauche petit' adresse='10 Rue Boulle 75011 PARIS' nom='Welcome-Bio-Biocoop' type='<i>Organic supermarket</option>' site=''  telephone='01 53 16 10 81' latt='48.8568727' lon='2.3722099'>Welcome-Bio-Biocoop <i><i>Organic supermarket</i></option>
+          <option class='gauche petit' adresse='55, rue Charlot 75003 Paris' nom='Wild and the Moon' type='Restaurant' site=''  telephone='+33 9 51 80 22 33 https://www.facebook.com/WildAndTheMoon/ emma@wildandthemoon.com' latt='48.861205' lon='2.360057'>Wild and the Moon <i>Restaurant</i></option>
+			    <option class='gauche petit' adresse='RUE DE LA JUIVERIE 84160 LOURMARIN' nom='AMBIANCE BIO' type='<i>Delicatessen</option>' site=''  telephone='bbshiva@free.fr 06 09 59 27 44' latt='43.763961' lon='5.362790'>AMBIANCE BIO <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='La Boissière 53160 Saint-Pierre-Sur-Orphe' nom='APEO' type='Association Les amis du Patrimoine d’Erve et Orphe' site='http://www.apeo.asso.fr'  telephone='bbshiva@free.fr 06 09 59 27 44' latt='48.2252045' lon='-0.166273'>APEO <i>Association Les amis du Patrimoine d’Erve et Orphe</option>
+          <option class='gauche petit' adresse='80 ROUTE D AIX EN PROVENCE 13510 EGUILLES' nom='ATELIER CULINAIRE- LUDOVIC GAUTHIER' type='Caterer' site=''  telephone='04 42 20 07 80/ 07 89 43 98 52 latelier.culinaire@hotmail.com' latt='43.565670' lon='5.357902'>ATELIER CULINAIRE- LUDOVIC GAUTHIER <i>Caterer</option>
+          <option class='gauche petit' adresse='30 rue du Général de Gaulle 56370 SARZEAU' nom='AU COIN DES DELICES' type='<i>Delicatessen</option>' site=''  telephone='+33(0)9 81 27 49 16' latt='47.527028' lon='-2.771034'>AU COIN DES DELICES <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='place B Le Méné 56950 CRACH' nom='AUX FRUITS QU&#8217;ON FIT' type='<i>Delicatessen</option>' site=''  telephone='+33(0)2 97 12 77 26' latt='47.617177' lon='-3.000414'>AUX FRUITS QU&#8217;ON FIT <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='37 rue du Général Leclerc 35580 GUICHEN' nom='CAUSERIE DES THES' type='<i>Delicatessen</option>' site=''  telephone='06 07 27 87 79 causeriesdesthes@gmail.com' latt='47.967171' lon='-1.796486'>CAUSERIE DES THES <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='6 rue des Écoles 29900 CONCARNEAU' nom='COMPTOIR ET TRADITION' type='<i>Delicatessen</option>' site=''  telephone='+33(0)2 98 97 16 94 comptoirettraditions@sfr.fr' latt='47.872619' lon='-3.919248'>COMPTOIR ET TRADITION <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='10 rue d Argentré 35000 RENNES' nom='CREPERIE AR BILLIG' type='Restaurant' site=''  telephone='02 99 79 53 89 marithe.langlois@me.com' latt='48.109726' lon='-1.681258'>CREPERIE AR BILLIG <i>Restaurant</i>
+          <option class='gauche petit' adresse='10 ave du Maréchal Leclerc 35310 MORDELLES' nom='EMBRUNS ET SAVEURS' type='<i>Delicatessen</option>' site='http://www.embrunsetsaveurs.fr/'  telephone='+33(0)9 81 27 57 32' latt='48.072731' lon='-1.849340'>EMBRUNS ET SAVEURS <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='137 Rue Mac Mahon 54000 Nancy' nom='EMMA Distribution- Croc&#8217;us' type='Organic food store' site='http://www.croc-us.fr/'  telephone='+33(0)03 83 45 26 87' latt='48.704955' lon='6.183357'>EMMA Distribution- Croc&#8217;us <i>Organic food store</i>
+          <option class='gauche petit' adresse='170 AV EDES TERMES 38410 ST MARTIN D URIAGE' nom='EPICERIE CA' type='<i>Delicatessen</i>' site=''  telephone='0642253898 0476018672 carine.aribert@hotmail.fr' latt='45.142747' lon='5.829109'>EPICERIE CA <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='13 PLACE DU POIDS PUBLIC 56000 VANNES' nom='EPICERIE K' type='<i>Delicatessen</option>' site=''  telephone='+33(0)611353895 epiceriek@sfr.fr' latt='47.655824' lon='-2.757747'>EPICERIE K <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='7 rue de la brigade Alsace Lorraine 67000 Strasbourg' nom='Épicerie OH' type='<i>Delicatessen</option>' site=''  telephone='06 50 54 42 93 olivia.coutire@gmail.com' latt='48.577032' lon='7.753742'>Épicerie OH <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='19 place de l Eglise 29880 GUISSENY' nom='FRANCOISE GOUEZ' type='Café' site=''  telephone='+33(0)2 98 25 62 33 gouez-francoise@wanadoo.fr' latt='48.634439' lon='-4.408699'>FRANCOISE GOUEZ <i>Café</i>
+          <option class='gauche petit' adresse='7 rue Poncelin 29217 LE CONQUET' nom='FUMAISON &#038; cie' type='<i>Delicatessen</option>' site=''  telephone='+33(0)2 98 89 03 60 clsimonin@aol.com' latt='48.360006' lon='-4.773669'>FUMAISON &#038; cie <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='14 rue Rameau 21000 DIJON' nom='Grain de Cassis' type='<i>Delicatessen</option>' site=''  telephone='01 43 57 98 49' latt='47.3211817' lon='5.0427472'>Grain de Cassis <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='Chemin de Bourgeac, 13520 Paradou' nom='HAMEAU DES BAUX' type='Hotel & restaurant' site='http://www.hameaudesbaux.com'  telephone='(33) (0)4 90 54 10 30 sommellerie@hameaudesbaux.com' latt='43.723568' lon='4.787748'>HAMEAU DES BAUX <i>Hotel & restaurant</i>
+          <option class='gauche petit' adresse='26 rue du Maréchal Joffre 53200 CHATEAU GONTIER' nom='Hollistherba et associés' type='<i>Delicatessen</option>' site='http://www.holistherba.com'  telephone='04 93 56 33 04' latt='47.8227014' lon='-0.7082556'>Hollistherba et associés <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='24 rue d Aiguillon 29600 MORLAIX' nom='KASHGAR &#038; cie' type='Salon de thé- <i>Delicatessen</option>' site='https://www.facebook.com/KashgarCompagnie'  telephone='02 98 62 40 81 kashgar.compagnie@orange.fr' latt='48.576840' lon='-3.825446'>KASHGAR &#038; cie <i>Salon de thé- <i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='233 avenu du Leman RÉSIDENCE LA BEAU RIVAGE 74380 Bonne' nom='La Fruitiere Des Neiges' type='<i>Delicatessen</option>' site=''  telephone='04 50 94 42 47 coop.bonne@gmail.com' latt='46.168772' lon='6.318956'>La Fruitiere Des Neiges <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='Ferme saint Julien 51520 SARRY' nom='L&#8217;ACHILÉE' type='Organic food market' site=''  telephone='0326680318 achillee.bio@wanadoo.fr' latt='48.915193' lon='4.412215'>L&#8217;ACHILÉE <i>Organic food market</option>
+          <option class='gauche petit' adresse='6, Rue Général Leclerc 29430 Plouescat' nom='Le Comptoir des Saveurs' type='<i>Delicatessen</option>' site='http://www.mer-terroir-tradition.com/'  telephone='+33(0)2 98 61 96 54' latt='48.657597' lon='-4.175110'>Le Comptoir des Saveurs <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='240 AVENUE MAURICE SANDRAL IMMEUBLE LATITUDE 4313600 LA CIOTAT' nom='LE PANIER GOURMAND' type='<i>Delicatessen</i>' site=''  telephone='06 71 13 53 90 sabatino.eric@orange.fr' latt='43.172783' lon='5.604790'>LE PANIER GOURMAND <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='70 Avenue de Nations (Anciennement route nationale) 57970 Yutz' nom='L’Epicerie des Terroirs' type='<i>Delicatessen</option>' site='http://epiceriedesterroirs.com/'  telephone='03 82 57 52 41 contact@epiceriedesterroirs.com' latt='49.359883' lon='6.191373'>L’Epicerie des Terroirs <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='21, rue de l Hôtel de Ville 13 200 Arles' nom='L&#8217;épicerie du baràvin' type='<i>Delicatessen </option>' site=''  telephone='+33(0)0490497278' latt='43.677729' lon='4.627843'>L&#8217;épicerie du baràvin <i><i>Delicatessen </i></option>
+          <option class='gauche petit' adresse='5 Rue de la Croix Blanche 35350 Saint-Coulomb' nom='LES COMPTOIRS DE SAINT MALO' type='<i>Delicatessen</option>' site='http://store.comptoirs-saint-malo.com/'  telephone='+33(0)2 99 89 05 83' latt='48.671981' lon='-1.907640'>LES COMPTOIRS DE SAINT MALO <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='16 rue Léon Gambetta 31000 Toulouse' nom='LES FAÇONNIERS' type='Restaurant-Delicatessen ' site='http://www.lesfaconniers.com'  telephone='06 12 08 76 19 contact@lesfaconniers.com' latt='43.602679' lon='1.441313'>LES FAÇONNIERS <i>Restaurant-Delicatessen </i>
+          <option class='gauche petit' adresse='11 bis rue de l Oratoire 06130 Grasse' nom='Les secrets du goût' type='<i>Delicatessen</option>' site=''  telephone='06 42 46 26 29 ecossedaniel@gmail.com' latt='43.659585' lon='6.923519'>Les secrets du goût <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='79 rue St Hélier 35000 RENNES' nom='LES SUCRES SALES DE ST HELIER' type='<i>Delicatessen</option>' site=''  telephone='02 23 40 21 96 aurelienpierrephilippe@gmail.com' latt='48.106319' lon='-1.666450'>LES SUCRES SALES DE ST HELIER <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='4 Rue des Récolettes 13001 Marseille' nom='MAISON EMPEREUR' type='Lifestyle' site='http://www.empereur.fr/'  telephone='0603402188 ou 0491540229 contact@empereur.fr' latt='43.296299' lon='5.378507'>MAISON EMPEREUR <i>Lifestyle</i>
+          <option class='gauche petit' adresse='27, Rue de Verrüe 50550 St-Vaast-La-Hougue' nom='Maison Gosselin' type='<i>Delicatessen</option>' site='http://www.maison-gosselin.fr/'  telephone='+33(0)2 33 54 40 06 / +33(0)2 33 54 43 28' latt='49.587571' lon='-1.266405'>Maison Gosselin <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='5 rue de la Paroisse 77300 Fontainebleau' nom='my FAVOURITE THINGS' type='<i>Concept store</option>' site='http://myfavouritethings.fr/'  telephone='01 64 23 67 82 contact@myfavouritethings.fr' latt='48.405617' lon='2.700949'>my FAVOURITE THINGS <i><i>Concept store</i></option>
+          <option class='gauche petit' adresse='7 AV DE CHAVOIRE 74940 ANNECY LE VIEUX' nom='Nathalie Alimentation Bio' type='Organic supermarket' site='http://www.nathalie-alimentation-bio.com'  telephone='+33(0)450660412' latt='45.905387' lon='6.159628'>Nathalie Alimentation Bio <i>Organic supermarket</option>
+          <option class='gauche petit' adresse='25 Rue du Maréchal Leclerc 35800 DINARD' nom='Pain d’épices' type='<i>Delicatessen</option>' site=''  telephone='02 99 21 03 46' latt='48.6344625' lon='-2.0535335'>Pain d’épices <i><i>Delicatessen</i></option>
+          <option class='gauche petit' adresse='3 avenue de la Marne 64200 Biarritz' nom='Prettycerise' type='Concept store' site=''  telephone='prettycerise@hotmail.com 0673659921' latt='43.484422' lon='-1.556905'>Prettycerise <i>Concept store</i></option>
+          <option class='gauche petit' adresse='10 Rue du Soldat Ferrari 83400 Hyères' nom='Restaurant SACHI' type='Restaurant' site=''  telephone='04 94 23 41 77 restaurant.sachi@gmail.com' latt='43.120382' lon='6.132906'>Restaurant SACHI <i>Restaurant</option>
+          <option class='gauche petit' adresse='9, rue Ronsard - 60180 NOGENT SUR OISE' nom='Restaurant Séson' type='Restaurant' site='http://www.seson.fr/'  telephone='03 44 29 48 41' latt='49.271456' lon='2.465934'>Restaurant Séson <i>Restaurant</i></option>
+			    <option class='gauche petit' adresse='Schwarzenbergstraße 10 1010 Wien, Austria' nom='Cafe Schwarzenberg' type='Café' site='http://www.cafe-schwarzenberg.at/de/index.html'  telephone='+43 1 5128998' latt='48.202053' lon='16.373852'>Cafe Schwarzenberg <i>Café</i></option>
+          <option class='gauche petit' adresse='Rue Marcel Plasman, 6 1440 Braine-Le-Château / La Belgique' nom='BIO BRAINE' type='Distributor' site='http://www.biobraine.com/'  telephone='accueil@biobraine.com +32 (0)2 366.11.56' latt='50.681265' lon='4.270016'>BIO BRAINE <i>Distributor</i></option>
+          <option class='gauche petit' adresse='406 rue Vanderkindere B-1180 Brussels ' nom='Onze Quatre-Vingt' type='Café- Bar' site=''  telephone='00 32 471 450683 miky@skynet.be' latt='50.814600' lon='4.358533'>Onze Quatre-Vingt <i>Café- Bar</i></option>
+          <option class='gauche petit' adresse='Skaeringvej 100 Lystrup 8520 Denmark' nom='Code &#038; Shape' type='Concept store' site='http://www.codeandshape.com/en/'  telephone='+45 40 34 25 58 lone@codeandshape.com' latt='56.272304' lon='10.242758'>Shape </option>
+          <option class='gauche petit' adresse='Europa - Allee 125, 60486 Frankfurt am Main, Allemagne' nom='L&#8217;âme des thés' type='Salon de thé&nbsp;' site=''  telephone='+49(0)69 97316467 info@cleotreeline.com' latt='50.107856' lon='8.626726'>L'âme des thés</option>
+          <option class='gauche petit' adresse='Schröderstr. 13 D - 10115 Berlin Allemagne' nom='PARKHAUS' type='Concept store' site='www.parkhausberlin.de'  telephone='+49 (0) 30 44 01 24 60 info@parkhausberlin.de' latt='52.530676' lon='13.392649'>PARKHAUS <i>Concept store</option>
+          <option class='gauche petit' adresse='via dei Mille 30/d 10123 Torino' nom='BAGNI PALOMA' type='Concept store' site='http://www.bagnipaloma.it'  telephone='011-888569' latt='45.062278' lon='7.688504'>BAGNI PALOMA <i>Concept store</option>
+          <option class='gauche petit' adresse='1-17-2 Ebisu-nishi, Shibuya-ku 1500021 Tokyo' nom='Kusakanmuri' type='Concept store' site='http://shop.kusakanmuri.com/shopbrand/ct37/'  telephone='03-6415-4193' latt='35.648279' lon='139.706562'>Kusakanmuri <i>Concept store</option>
+          <option class='gauche petit' adresse='41 Rue Grimaldi 98000 MONACO' nom='Ets Pierre' type='Galerie' site=''  telephone='003 77 99 99 61 89' latt='43.7357352' lon='7.4198003'>Ets Pierre</option>
+          <option class='gauche petit' adresse='Place des Moulins MC 98000 MONACO' nom='La Maison du Thé / Le Teashop' type='Salon de thé' site=''  telephone='(+33) 661 326 309' latt='43.745260' lon='7.429067'>La Maison du Thé / Le Teashop <i>Salon de thé</option>
+          <option class='gauche petit' adresse='Villa des Pins - B8, rue Honoré Labande 98000 Monaco' nom='NOUVEAU MUSEE NATIONAL DE MONACO' type='Museum' site='http://www.nmnm.mc/index.php?lang=fr'  telephone='+377 98 98 19 62' latt='43.744359' lon='7.430720'>NOUVEAU MUSEE NATIONAL DE MONACO <i>Museum</i>
+          <option class='gauche petit' adresse='Rua de São Paulo, 98-102 1200-429 Lisboa' nom='BRANCO sobre BRANCO' type='Interior Design and Decoration' site='http://www.brancosobrebranco.com/home_uk.html'  telephone='+351 213 900 269 info@brancosobrebranco.com' latt='38.708168' lon='-9.144615'>BRANCO sobre BRANCO <i>Interior Design and Decoration</i></option>
+          <option class='gauche petit' adresse='4-12-EDEUNBIZ GLASS TOWER No11-SEONGNAM-DAERO No916-BEON-GIL, BUNDANG-GU, SEONGNAM-SI,GYEONGGI-DO SOUTH KOREA' nom='DISCOVERLEE KOREA CO., LTD' type='<i>South Korea Official distributor </option>' site=''  telephone='070-4680-3019 castyou@naver.com' latt='37.382699' lon='127.118906'>DISCOVERLEE KOREA CO., LTD <i><i>South Korea Official distributor </i></option>
+          <option class='gauche petit' adresse='1 calle de la purissima 07760 Cuitadella de Menorca' nom='LA PURISSIMA' type='Concept store' site='http://www.mademoisellepierre.com'  telephone='(+33) 661 326 309' latt='40.000820' lon='3.837103'>LA PURISSIMA <i>Concept store</i>
+          <option class='gauche petit' adresse='Verlengde Hoflaan 98 - 6822ED Arnhem The Netherlands' nom='BL-ij' type='Concept store' site='http://bl-ij.nl/en_GB/'  telephone='+316 1808 1993 info@bl-ij.nl' latt='51.990345' lon='5.925082'>BL-ij <i>Concept store</i></option>
+          <option class='gauche petit' adresse='Shilton Road, Burford OX18 4PA Oxfordshire' nom='Burford Garden Company' type='Boutique' site='http://www.burford.co.uk'  telephone='+441993823117'             latt='51.7972'   lon='-1.6305261'>Burford Garden Company <i>Boutique</i></option>
+          <option class='gauche petit' adresse='34 Kensington Church Street London W84HA' nom='Candella Tea Room' type='Tea Room' site='http://www.candellatearoom.com/'  telephone='020 7937 4161' latt='51.504224' lon='-0.191935'>Candella Tea Room <i>Tea Room</i></option>
+          <option class='gauche petit' adresse='12 Victoria Street, Nottingham, NG1 2EX, UK food@delilahfinefoods.co.uk' nom='Delilah Fine Foods' type='Restaurant' site=''  telephone='+44 (0) 115 9484461' latt='52.953357' lon='-1.146479'>Delilah Fine Foods <i>Restaurant</i></option>
+          <option class='gauche petit' adresse='179 King Street, Castle Dougles SW Scotland, DG71D, U.K.' nom='Designes Gallery &#038; Café' type='Café' site='http://www.designsgallery.co.uk/'  telephone='01556 504552' latt='54.938835' lon='-3.932503'>Designes Gallery &#038; Café <i>Café</i></option>
+          <option class='gauche petit' adresse='30 Uxbridge St, Notting Hill W8 7TA London' nom='Egg Break' type='Restaurent' site='http://www.eggbreak.com'  telephone='+44 203 535 8300' latt='51.509092' lon='-0.197802'>Egg Break <i>Restaurent</i></option>
+          <option class='gauche petit' adresse='79 Brudenell Road London SW17 8DD  U.K.' nom='Essential Ingredient Catering' type='Catering' site='http://www.essentialingredient.co.uk'  telephone='+44 (0)20 8767 6178' latt='51.433003' lon='-0.159841'>Essential Ingredient Catering <i>Catering</i></option>
+          <option class='gauche petit' adresse='70 Mountgrove Rd, London N5 2LT U.K.' nom='Fink&#8217;s Salt and Sweet' type='Restaurant' site='http://finks.co.uk/'  telephone='+44 20 7684 7189' latt='51.561378' lon='-0.096352'>Fink&#8217;s Salt and Sweet <i>Restaurant</i></option>
+          <option class='gauche petit' adresse='34 Carlton Street, Hockley, Nottingham, NG1 1NN' nom='Gill&#8217;s &#8211; Deli/Café' type='<i>Delicatessen</option>/<em>Café</em>' site=''  telephone='01159551402' latt='52.953639' lon='-1.144480'>Gill&#8217;s &#8211; Deli/Café <i><i>Delicatessen</i>/<em>Café</em></option>
+          <option class='gauche petit' adresse='87-135 Brompton Road, London SW1X 7XL U.K.' nom='Harrods' type='Up market' site='http://www.harrods.com/'  telephone='+44 20 7730 1234' latt='51.499595' lon='-0.163245'>Harrods <i>Up market</option>
+          <option class='gauche petit' adresse='45 Kensington Church Street W8 4BA LONDON' nom='Kensington Cafe' type='Café' site='http://www.kensingtoncoffee.co.uk/'  telephone='02 98 62 40 81 kashgar.compagnie@orange.fr' latt='51.504304' lon='-0.192454'>Kensington Cafe <i>Café</i></option>
+          <option class='gauche petit' adresse='19 Catherine Street, Covent Garden WC2B 5JS London U.K.' nom='Little Water Restaurant' type='Restaurant' site='http://www.littlewater.co.uk/'  telephone='+44 020 3659 3432' latt='51.512609' lon='-0.120428'>Little Water Restaurant <i>Restaurant</i></option>
+          <option class='gauche petit' adresse='3 Tottenham St W1T 2AF London' nom='Rawligion' type='Restaurent' site='http://www.rawligion.co.uk'  telephone='prettycerise@hotmail.com 0673659921' latt='51.520858' lon='-0.134818'>Rawligion <i>Restaurent</i></option>
+          <option class='gauche petit' adresse='The Old School House, 1 Mill Lane, Dunster, Somerset, TA24 6SW' nom='SALMON AND MOTH' type='Online Gift Store' site='http://salmonandmoth.co.uk/'  telephone='01 44 75 51 96' latt='51.079840' lon='-4.059182'>SALMON AND MOTH <i>Online Gift Store</i>
+          <option class='gauche petit' adresse='One New Change Shopping Centre, London, EC4M 9AF' nom='Startisans &#8211; ST PAULS GOOD FOOD MARKET' type='Food Market' site='http://www.shepherdsmarkets.com/'  telephone='0686004790 cathy.faivre.closier@gmail.com' latt='51.514022' lon='-0.095457'>Startisans &#8211; ST PAULS GOOD FOOD MARKET <i>Food Market</i>
+          <option class='gauche petit' adresse='The Salisbury 5th Floor Salisbury House London Wall EC2M 5QQ, UK' nom='The Fine Food Forager' type='U.K. Official distributor' site='https://www.facebook.com/thefinefoodforager'  telephone='+44 (0) 7445 243 976 getintouch@thefinefoodforager.co.uk' latt='51.519286' lon='-0.087809'>The Fine Food Forager <i>U.K. Official distributor</i></option>
+          <option class='gauche petit' adresse='39 High Street, Wanstead, LONDON, E11 2AA U.K.' nom='The Larder' type='Fine Food Store- Café- Restaurant' site='http://www.worldslarder.co.uk/'  telephone='020 8989 7181 eat@worldslarder.co.uk' latt='51.579888' lon='0.024290'>The Larder <i>Fine Food Store- Café- Restaurant</i></option>
+        </select>
+      </ul>
+    </div>
+		<div id="map-canvas">
+		</div>
+	    </ul><!-- .entry-content -->
+</article><!-- #post-## -->
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChlLKUJvuUVdSkBvg7Mf1UhdjRoMyRPjs">
+</script>
+<script type="text/javascript">
+// Points de Vente
+
+$(window).ready(function() {
+ 	var TailleDispoH = $(window).height()-$(".site-info").height()-$(".header-main").height();
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+	if ( $(window).width() < 600) {
+		$(".petit").click(function() {
+     		window.open("https://www.google.fr/maps/@"+$(this).attr("latt")+","+$(this).attr("lon")+",20z");
+		});
+	}
+});
+
+var map;
+var marker;
+var markers = new Array();
+var infowindows = new Array();
+
+var paris = new google.maps.LatLng(48.8588589, 2.34705993);
+
+var nb = 97;
+var i = 0;
+
+function initialize() {
+
+  var styles = [ { "featureType": "water", "stylers": [ { "color": "#e4fdff" } ] },{ "featureType": "poi.park", "stylers": [ { "visibility": "on" }, { "color": "#def1cc" } ] },{ "featureType": "road.highway", "stylers": [ { "visibility": "on" }, { "color": "#f4eadd" } ] },{ "featureType": "landscape.natural.landcover", "stylers": [ { "color": "#E0D0C0" } ] },{ "featureType": "landscape" } ];
+
+  var styledMap = new google.maps.StyledMapType(styles, {name: "Gmap Le Bénéfique"});
+  var image = '/elem/icon-map.png';
+  var bounds = new google.maps.LatLngBounds();
+
+  var mapOptions = {
+      center: paris,
+      zoom: 5,
+	  icon: image
+    };
+    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		map.mapTypes.set('map_style', styledMap);
+		map.setMapTypeId('map_style');
+
+     $(".petit").each(function() {
+		var Latt = $(this).attr("latt");
+		var Long = $(this).attr("lon");
+ 		var Lieu = new google.maps.LatLng(Latt,Long);
+		markers.push([$(this).attr("nom"),Latt,Long]);
+		infowindows.push(["<div style='width:300px; height:120px'><strong>"+$(this).attr('nom')+"</strong><br><i>"+$(this).attr('type')+"</i><br>"+$(this).attr('adresse')+"<br>"+$(this).attr('telephone')+"<br>"+"<a href='"+$(this).attr('site')+"' target='_blank'>"+$(this).attr('site')+"</a></div>"]);
+	});
+
+	var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+	 // Loop through our array of markers & place each one on the map
+    for( i = 0; i < markers.length; i++ ) {
+		var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+		bounds.extend(position);
+
+    var icon = {
+        url: "/elem/icon-map.png", // url
+        scaledSize: new google.maps.Size(52, 68), // scaled size
+        origin: new google.maps.Point(0,0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
+		marker = new google.maps.Marker({
+			position: position,
+			map: map,
+			icon: icon,
+		    animation: google.maps.Animation.DROP,
+			title: markers[i][0]
+		});
+
+		// Allow each marker to have an info window
+		google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			return function() {
+				if( map.getZoom() > 12 ) {
+					infoWindow.setContent(infowindows[i][0]);
+					infoWindow.open(map, marker);
+				} else {
+ 					map.setCenter(marker.getPosition());
+					map.setZoom(13);
+				}
+			}
+		})(marker, i));
+
+	}
+
+	$(".petit").click(function() {
+		var Latt = $(this).attr("latt");
+		var Long = $(this).attr("lon");
+		var Lieu = new google.maps.LatLng(Latt,Long);
+		map.setCenter(Lieu);
+		map.setZoom(15);
+		var infowindow = new google.maps.InfoWindow({
+		content: "<div style='width:300px; height:120px'><strong>"+$(this).attr('nom')+"</strong><br><i>"+$(this).attr('type')+"</i><br>"+$(this).attr('adresse')+"<br>"+$(this).attr('telephone')+"<br>"+"<a href='"+$(this).attr('site')+"' target='_blank'>"+$(this).attr('site')+"</a></div>",
+		position: Lieu
+		});
+		infowindow.open(map);
+	});
+}
+</script>
+		</div><!-- #content -->
+</div><!-- #main-content -->
+
+	</div><!-- #main -->
+	</div><!-- #page -->
+	<div class="Blackout"></div>
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"0","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","loopImages":"","resizeCenter":"","marginSize":"","linkTarget":"_self","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.lebenefique.com/wp-content/plugins/wp-lightbox-2/wp-lightbox-2.min.js?ver=1.3.4.1'></script>
+<script type='text/javascript' src='http://www.lebenefique.com/wp-includes/js/comment-reply.min.js?ver=4.0.13'></script>
+<script type='text/javascript' src='http://www.lebenefique.com/wp-content/themes/Benefique-Theme/js/functions.js?ver=20140319'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"en","icl_home":"http:\/\/www.lebenefique.com?lang=en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.lebenefique.com/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.0.13'></script>
+
+<script>
+  $(window).ready(function() {
+ 	$(".site-navigation li").mouseenter(function() {
+		$(this).animate({"background-color":"rgb(255,245,239,1)"},500);
+		clearTimeout($.data(this, 'timer'));
+		if ( $(this).hasClass('Trois') || $(this).hasClass('Quatre') ) {
+			$(this).next('.sMenu').css("left","0px");
+		}
+		if ( $(this).hasClass('Un') || $(this).hasClass('Deux') || $(this).hasClass('Trois') || $(this).hasClass('Quatre') )
+			$('.sMenu').stop(true,true).slideUp(200);
+		$(this).next('.sMenu').stop(true,true).slideDown(200);
+	});
+	$(".Deux").click(function() {
+		window.open(
+		  'http://www.facebook.com/pages/Le-Benefique/312021512259174',
+		  '_blank'
+		);
+	});
+
+	$(".sMenu").mouseleave(function() {
+		$(".site-navigation li").animate({"background-color":"rgb(255,245,239,0)"},500);
+		$.data(this, 'timer', setTimeout($.proxy(function() {
+			$(this).stop(true,true).slideUp(200);
+		}, this), 200));
+	});
+	$(".Contact").click(function() {
+		var langue = $(".lang_sel_sel img").attr("title");
+		if ( langue == "Français")
+			var Contact = "NOUS CONTACTER ?";
+		else
+			var Contact = "CONTACT US";
+		var body = $("html, body");
+		body.animate({scrollTop:0}, '500', 'swing', function() {
+			$(".site").append("<div class='Pastille'><div class='Ferme'></div><br><h1>"+Contact+"</h1><em><br>Le Bénéfique - IDYLLE SARL<br>75010 Paris - France<br>Phone : +33 (0) 981100469</em><br><br>INFORMATIONS<br><em><strong><a href='mailto:contact@lebenefique.com'>contact@lebenefique.com</a></strong></em><br><br>PRESSE<br><em><strong><a href='mailto:presse@lebenefique.com'>presse@lebenefique.com</a></strong></em><br><br><a href='http://www.facebook.com/pages/Le-Benefique/312021512259174' target='_blank'><div class='Facebook'></div></a><div>");
+			$(".Blackout").animate({opacity: 1},1000);
+			$(".Blackout").css("display","block");
+			$(".Ferme").click(function() {
+				$(".Pastille").remove();
+				$(".Blackout").animate({opacity: 0},1000, function() {
+					$(".Blackout").css("display","none");
+				});
+			});
+		});
+	});
+});
+</script>
+</body>
+</html>

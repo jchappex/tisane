@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title><%= yield(:title) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<script src="//maps.google.com/maps/api/js?key=AIzaSyChlLKUJvuUVdSkBvg7Mf1UhdjRoMyRPjs " ></script>
+<script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+<script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script>
+<body class="<%= controller.controller_name %>">
+  <div id="layout-main-page">
+    <div class="fix-menu">
+<section id="menu">
+  <li><a href="#" class="class-menu"><div class="line-menu elem-one"></div><div class="line-menu elem-two"></div><div class="line-menu elem-three"></div></a>
+        <ul class="sousMenu">
+                <li class="limen"><%= link_to'IDÉE', idea_path %></li>
+                <li class="limen"><%= link_to'LÉGENDE', legend_path %></li>
+                <li class="limen"><%= link_to'PRODUITS', store_path %></li>
+                <li class="limen"><%= link_to 'POINTS DE VENTE', pointsofsale_path,  data: { no_turbolink: false } %></li>
+                <li class="limen"><a href="/showcase/Workwithus">TRAVAILLER AVEC NOUS</a></li>
+                <li class="limen"><a href="#">PRESSE</a></li>
+                <li class="limen"><%= link_to'CONTACT', contact_path %></li>
+                <li class="limen btn-langue"><a href="#"><img src="/elem/Btn-langue.png" alt="bouton-langue" class="menu-button bouton-langue" /></a></li>
+                <%= link_to image_tag("/elem/shopping-bag.png", :class =>"panier-header-menu"), current_cart %>
+                <ul class="nav pull-right">
+                  <div class="cart-count-menu">
+                    <% if current_cart %>
+                      <li><%= current_cart.cart_count%></li>
+                    <% end %>
+                  </div>
+              </ul>
+              <% if current_user.admin? %>
+              <ul>
+                <li><%= link_to'Orders', orders_path %></li>
+                <li><%= link_to'Products', products_path %></li>
+                <li><%= link_to'Users', users_path %></li>
+                <li><%= link_to'Shops', maps_path %></li>
+              </ul>
+              <% end %>
+              <% if session[:user_id] %>
+                <li><p class="log-buttons"><%= button_to 'deconnexion', logout_path, method: :delete %></p></li>
+              <% else %>
+                <li class="log-buttons"><p><%= link_to 'Inscription', new_user_path %> / <%= link_to 'Connexion', login_path %></p></li>
+              <%end %>
+              <li><%= link_to instagram_path do image_tag("/elem/insta.png", onmouseover: "this.src='#{asset_path('/elem/insta-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/insta.png')}'", width: '25') end %>
+                  <%= link_to facebook_path do image_tag("/elem/facebook.png", onmouseover: "this.src='#{asset_path('/elem/facebook-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/facebook.png')}'", width: '13') end %>
+              </li>
+        </ul>
+  </li>
+</section>
+<h1 class="top-title-menu"><%= yield(:title) %></h1>
+</div>
+<div id="flash">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+</div>
+<%= yield %>
+<footer class="footer-app">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-offset-3 col-xs-7 fixed-middle">
+        <a href="#">Conditions generales</a>
+        <a href="#">Mentions legales</a>
+        <a href="#">FAQ</a>
+        <a href="#">Credits</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script>
+   handler = Gmaps.build('Google');
+       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+          markers = handler.addMarkers(<%=raw @hash.to_json %>);
+          handler.bounds.extendWith(markers);
+          $( document ).ready(function() {
+           setInterval(function(){
+               $(function () {
+                   $.ajax({
+                     type:"GET",
+                     url:"/path_to_controller_action",
+                     dataType:"json",
+                     data: {some_id:1},
+                     success:function(result){
+                       for (var i = 0; i < markers.length; i++) {
+                         markers[i].setMap(null);
+                         handler.removeMarkers(markers);
+                       }
+                       markers = [10];
+                       markers = handler.addMarkers(result);
+                       handler.bounds.extendWith(markers);
+                     }
+                   })
+               });
+              }, 10000);
+           handler.fitMapToBounds();
+           handler.getMap().setZoom(5);
+           });
+       });
+</script>
+</body>
+</html>
