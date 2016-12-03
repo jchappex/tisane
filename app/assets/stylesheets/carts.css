@@ -3,11 +3,24 @@
   They will automatically be included in application.css.
 */
 
+.carts h1{
+  font-family: 'Didot LT Std Italic';
+  font-size: 25px;
+}
+
+.total-and-checkout{
+background-color: yellow;
+}
+
+.resume-cart{
+  background-color: red;
+}
+
 .test{
   margin-bottom: 80px;
 }
 .cart-section{
-  font-family: 'Futura Condensed Medium';
+  font-family: 'Roboto';
 }
 
 .head-div h1{
@@ -20,12 +33,6 @@
 
 .logo-img-carts{
   width: 250px;
-}
-
-.title-carts{
-  top: 50px;
-  font-size: 25px;
-  display: block;
 }
 
 
@@ -45,9 +52,5 @@ table.test {
 }
 
 .total-and-checkout{
-  position: absolute;
-  right: 0;
-  top: 280px;
-  left: -80px;
   font-size: 18px;
 }

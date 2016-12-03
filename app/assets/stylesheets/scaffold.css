@@ -13,8 +13,7 @@ pre {
 }
 
 a { color: #000; }
-a:visited { color: #000; }
-a:hover { color: #b6a083; }
+a:hover { color: #b6a083; text-decoration: none; transition: 0.4s;}
 
 div.field, div.actions {
   margin-bottom: 10px;

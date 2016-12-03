@@ -21,4 +21,6 @@
 //= require underscore
 //= require gmaps/google
 //= require paraxify.js
+//= require test-font.js
+//= require wow.js
 //= require_tree .

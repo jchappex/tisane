@@ -1,4 +1,4 @@
-<% content_for :title, "Accueil" %>
+<% content_for :title, "ACCUEIL" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,12 +17,12 @@
 			<!--<h1><img src="Logo.png"></h1>-->
 				<img class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" src="/elem/logo2.png" alt="logo Le Bénéfique"/>
 				<div class="row">
-					<div class="col-xs-4 col-xs-offset-5 col-sm-4 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-3 col-lg-offset-5 btn-div">
+					<div class="col-xs-4 col-xs-offset-5 col-sm-4 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-4 col-lg-offset-4 btn-div">
 						<%= link_to store_path do
-							image_tag("/elem/Btn-discover.png", onmouseover: "this.src='#{asset_path('/elem/Btn-discover-hove.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-discover.png')}'", width: '132')
+							image_tag("/elem/decouvrir.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir.png')}'", width: '132')
 					end %>
 						<%= link_to video_path do
-    					image_tag("/elem/Btn-play.png", onmouseover: "this.src='#{asset_path('/elem/Btn-play-hovere.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-play.png')}'", width: '43')
+    					image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132')
 					end %>
 				</div>
 			</div>

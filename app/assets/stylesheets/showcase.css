@@ -72,6 +72,11 @@ width: 100%;
   background-image:url("/elem/photo-header-legend.jpg");
 }
 
+.header-content{
+  position: absolute;;
+  top: 50%;
+}
+
 
 .section-all{
   position: relative;
@@ -87,6 +92,15 @@ width: 100%;
 
 }
 
+.section-all h1{
+   font-family: 'Didot LT Std Bold Italic'
+}
+
+.section-all p {
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+}
 
 .bloc-center{
   font-family: 'Roboto', sans-serif;
@@ -101,26 +115,12 @@ width: 100%;
   margin-bottom: 4%;
 }
 
-.sect-overlap .bloctext{
-  position: absolute;
-  top: 0;
-  z-index:100;
-}
-
 .sect-overlap img{
 top: 0;
 width: 100%;
+min-width: 500px;
 }
 
-.sect-overlap p {
-position: absolute;
- z-index:10;
- font-family: 'Roboto', sans-serif;
- font-size: 20px;
- font-weight: 300;
-text-align: left;
-z-index: 200;
-}
 
 .sect-overlap .text-center-align {
 text-align: center;
@@ -149,25 +149,73 @@ text-align: center;
                                                                     /*  NORMAL DEVICE ONLY*/
 
 
-@media screen and (min-width: 989px) {
+@media screen and (min-width: 769px) {
 .img-top img{
-position: relative;
 position: fixed;
 top:45px; left: 0; right:0;
 margin: auto;
 z-index: 1;
 }
 .text-vertical-center p {
-position: fixed;
-margin: 0;
+position: fixed; left: 0; right:0;
+margin: auto;
+z-index: 1;
 font-size: 55px;
 font-family: 'Didot LT Std Bold Italic';
 color: white;
 }
+
 .paraxify{
 background-attachment: fixed;
 background-position: center center;
 background-size: cover;
+}
+
+
+
+*,*:before,*:after {box-sizing:border-box}
+
+.main {
+  float:left;
+  width: 100%;
+  padding: 10vh 0 40vh;
+}
+
+.card {
+  float:left;
+  width: 27%;
+  margin: 3%;
+  height: 15vh;
+  background:#000;
+  border-radius: 5px;
+  box-shadow: 0px .125em .25em rgba(0,0,0,.25);
+}
+.card:hover {
+  transform: translateY(-.25em);
+  box-shadow: 0 .25em 1em rgba(0,0,0,.5);
+}
+.fade-content > *{transition: ease opacity .25s, ease transform .25s;}
+
+/* Offsets timing for groups of three. This must be adjusted if there are more or less than three element per row.*/
+.fade-content > *:nth-child(3n+2) {transition-delay: .1s;}
+.fade-content > *:nth-child(3n+3) {transition-delay: .2s;}
+
+
+
+.sect-overlap .bloctext{
+  position: absolute;
+  top: 0;
+  z-index:100;
+}
+
+.sect-overlap p {
+position: absolute;
+ z-index:10;
+ font-family: 'Roboto', sans-serif;
+ font-size: 20px;
+ font-weight: 300;
+text-align: left;
+z-index: 200;
 }
 
 .img-fluid{
@@ -177,12 +225,23 @@ overflow:hidden;
 width:100%;
 z-index:2
 }
+
+.francois{
+  text-align: left;position:relative;left:40px;
+}
+
+.soliman{
+  text-align: left;
+}
+
 }
 
 
 
+
+
                                                                           /* MOBILE SIZE ONLY*/
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 768px) {
 
 
   .img-top img{
@@ -193,13 +252,41 @@ z-index:2
 
 
   .text-vertical-center p {
-      margin: 0;
-      padding-left: 26%;
-      padding-right: 26%;
-      font-size: 3.5vw;
-      font-family: 'Didot LT Std Italic';
-      color: white;
+  position: fixed; left: 0; right:0;
+  margin: auto;
+  z-index: 1;
+  font-size: 40px;
+  font-family: 'Didot LT Std Bold Italic';
+  color: white;
   }
+
+  .mouse-scroll{
+    display: none;
+  }
+
+  .sect-overlap .bloctext{
+    display: none;
+    top: 0;
+    z-index:100;
+  }
+
+  .sect-overlap p {
+   z-index:10;
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+  text-align: left;
+  z-index: 200;
+  }
+
+  .francois{
+    text-align: left;
+  }
+
+  .soliman{
+    text-align: left;
+  }
+
 }
 
                                                         /******************** HOME ********************/
@@ -216,5 +303,4 @@ z-index:2
 
 .btn-div{
   margin-top: 20px;
-  left: -45px;
 }

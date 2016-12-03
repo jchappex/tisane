@@ -1,0 +1,124 @@
+@-webkit-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 4%;
+  }
+  15% {
+    opacity: 1;
+    top: 12%;
+  }
+  50% {
+    opacity: 0;
+    top: 15%;
+  }
+  100% {
+    opacity: 0;
+    top: 4%;
+  }
+}
+
+@-moz-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 4%;
+  }
+  15% {
+    opacity: 1;
+    top: 12%;
+  }
+  50% {
+    opacity: 0;
+    top: 15%;
+  }
+  100% {
+    opacity: 0;
+    top: 4%;
+  }
+}
+
+@keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 4%;
+  }
+  15% {
+    opacity: 1;
+    top: 12%;
+  }
+  50% {
+    opacity: 0;
+    top: 15%;
+  }
+  100% {
+    opacity: 0;
+    top: 4%;
+  }
+}
+
+// Mouse & Message Styles
+
+// The Scroll Link
+.mouse-scroll {
+  padding-top: 300px;
+  display: inline-block;
+  position: fixed; left: 25px; right:0;
+  margin: auto;
+  z-index: 1;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #7F8C8D;
+  color: #FFF;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+  overflow: hidden;
+
+  // The Mouse
+  .mouse {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 73px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #FFF;
+    border-radius: 23px;
+
+    // Scroll Indicator
+    .mouse-movement {
+      position: absolute;
+      display: block;
+      top: 4%;
+      left: 50%;
+      width: 2px;
+      height: 9px;
+      margin: 0 0 0 0;
+      background: #FFF;
+      border-radius: 50%;
+      -webkit-animation: scroll-ani 4s linear infinite;
+      -moz-animation: scroll-ani 4s linear infinite;
+      animation: scroll-ani 4s linear infinite;
+    }
+
+  }
+
+  // The Scroll Message
+  .mouse-message {
+      float: left;
+      padding: 0;
+      -webkit-animation: scroll-ani 4s linear infinite;
+    -moz-animation: scroll-ani 4s linear infinite;
+    animation: scroll-ani 4s linear infinite;
+  }
+
+  // shown on Hover of The Mouse
+  &:hover {
+    .mouse-message {
+      margin-top: 0;
+    }
+  }
+
+}
