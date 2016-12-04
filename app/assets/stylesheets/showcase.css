@@ -145,6 +145,17 @@ text-align: center;
 
 }
 
+.presse-txt h1{
+  font-family: 'Didot LT Std Bold Italic';
+  font-size: 50px;
+   border-bottom: 1px solid #b6a083;
+}
+
+.presse-txt p{
+  font-family: 'Roboto';
+  font-size: 10px;
+}
+
 
                                                                     /*  NORMAL DEVICE ONLY*/
 

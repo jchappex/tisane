@@ -21,8 +21,8 @@
         <li class="limen"><%= link_to'LÉGENDE', legend_path %></li>
         <li class="limen"><%= link_to'PRODUITS', store_path %></li>
         <li class="limen"><%= link_to 'POINTS DE VENTE', pointsofsale_path,  data: { no_turbolink: false } %></li>
-        <li class="limen"><a href="/showcase/Workwithus">TRAVAILLER AVEC NOUS</a></li>
-        <li class="limen"><a href="#">PRESSE</a></li>
+        <li class="limen"><%= link_to'TRAVAILLER AVEC NOUS', workwithus_path %></li>
+        <li class="limen"><%= link_to'PRESSE', presse_path %></li>
         <li class="limen"><%= link_to'CONTACT', contact_path %></li>
         <li class="limen"><img src="/elem/Btn-langue.png" alt="bouton-langue" /></li>
         <li class="limen"> <%= link_to image_tag("/elem/shopping-bag.png", :class =>"panier-header-menu"), current_cart %></li>

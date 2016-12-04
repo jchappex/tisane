@@ -16,13 +16,16 @@ Depot::Application.routes.draw do
   get "showcase/Video"
   get "showcase/Idea"
   get "showcase/Legend"
-   get "showcase/Workwithus"
+  get "showcase/Workwithus"
+  get "showcase/Presse"
   get "maps/index"
   get "store/index"
   get "pointsofsale/index"
   get 'pointsofsale' => 'pointsofsale#index'
   get 'idea' => 'showcase#Idea'
   get 'legend' => 'showcase#Legend'
+  get 'workwithus' => 'showcase#Workwithus'
+  get 'presse' => 'showcase#Presse'
   get 'store' => 'store#index'
   get 'maps' => 'maps#index'
   get 'video' => 'showcase#Video'
