@@ -73,8 +73,8 @@ width: 100%;
 }
 
 .header-content{
-  position: absolute;;
-  top: 50%;
+
+  margin-top: 45vh;
 }
 
 
@@ -118,7 +118,6 @@ width: 100%;
 .sect-overlap img{
 top: 0;
 width: 100%;
-min-width: 500px;
 }
 
 
@@ -254,7 +253,10 @@ z-index:2
                                                                           /* MOBILE SIZE ONLY*/
 @media screen and (max-width: 768px) {
 
-
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
   .img-top img{
     position: absolute;
     top:45px;left: 0; right:0;
@@ -263,10 +265,8 @@ z-index:2
 
 
   .text-vertical-center p {
-  position: fixed; left: 0; right:0;
-  margin: auto;
-  z-index: 1;
-  font-size: 40px;
+    display: block;
+  font-size: 4vh;
   font-family: 'Didot LT Std Bold Italic';
   color: white;
   }
@@ -303,19 +303,14 @@ z-index:2
   }
 
 }
-
                                                         /******************** HOME ********************/
-
-.home-links{
+.home-links {
+  margin-top: 40vh;
   position: relative;
-  top: 35vh;
 }
 
-.title img{
-	opacity: 0.9;
-	height: 150px;
-}
-
-.btn-div{
-  margin-top: 20px;
+.img-home{
+  display: inline-block;
+vertical-align: middle;
+float: none;
 }

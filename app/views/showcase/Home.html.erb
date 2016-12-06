@@ -13,11 +13,12 @@
 
 	</header>
 	<body data-vide-bg="/elem/le_benefique_movie.mp4">
-		<section class = "home-links container">
+		<div class="container">
+			<div class="row">
+				<section class = "home-links col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">
 			<!--<h1><img src="Logo.png"></h1>-->
-				<img class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" src="/elem/logo2.png" alt="logo Le Bénéfique"/>
-				<div class="row">
-					<div class="col-xs-4 col-xs-offset-5 col-sm-4 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-4 col-lg-offset-4 btn-div">
+				<div><img class="img-responsive img-home" src="/elem/logo2.png" alt="logo Le Bénéfique"/></div>
+					<div class=" btn-div">
 						<%= link_to store_path do
 							image_tag("/elem/decouvrir.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir.png')}'", width: '132')
 					end %>
@@ -25,8 +26,9 @@
     					image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132')
 					end %>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
+	</div>
 		<!--<script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="bootstrap/js/mesfonctions.js"></script>-->
 		<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
 		<script src="bootstrap/js/jquery.vide.js"></script>

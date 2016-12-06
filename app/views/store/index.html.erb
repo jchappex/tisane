@@ -27,14 +27,15 @@ background-position:top;
 <section class="product_section_1">
   <header id="top" class="header-store">
     <div class="img-top container">
+      <a href="/showcase/Home"> <p><%=image_tag("logo.png", :class => 'logo_img col-xs-3 col-xs-offset-5 col-sm-3 col-sm-offset-5 col-md-3 col-md-offset-5 col-lg-3 col-lg-offset-5')%></p></a>
       <p class="title col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5"> nos collections</p>
             <div class="img_tasse col-xs-2 col-xs-offset-6 col-sm-2 col-sm-offset-6 col-md-2 col-md-offset-6 col-lg-2 col-lg-offset-6"><%=image_tag("tasse-section-1.png")%></div>
     </div>
     <div class="block-sultan container">
       <h1 class="col-xs-5 col-xs-offset-5 col-sm-5 col-sm-offset-5 col-md-4 col-md-offset-5 col-lg-3 col-lg-offset-5 line_title">LES INFUSIONS DU SULTAN</h1>
       <div class="row">
-        <div class="img_back_soli col-xs-10 col-xs-offset-1 col-lg-9 col-lg-offset-1"><%=image_tag("photo-back-section-1.png", :class =>"img-responsive")%></div>
-        <div class="illu_front col-xs-5 col-xs-offset-7 col-lg-4 col-lg-offset-7"><%=image_tag("illu-front-section-1.png", :class =>"img-responsive")%></div>
+        <div class="img_back_soli col-xs-10 col-xs-offset-1 col-lg-9 col-lg-offset-1"><%=image_tag("photo-back-section-1.png")%></div>
+        <div class="illu_front col-xs-5 col-xs-offset-7 col-lg-4 col-lg-offset-7"><%=image_tag("illu-front-section-1.png")%></div>
     </div>
     <p class="txt_soli col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2">Les infusions du sultan sont cueillies à la main, de manière raisonnée par le dernier peuple nomade de Turquie. Les villageois perpétuent ainsi leur mode de vie traditionnel et protège la biodiversité des régions concernés. Découvrez nos infusions de fleur de lavande, la sauge de montagne, le thym ou le tilleul.</p>
   </div>
@@ -45,6 +46,49 @@ background-position:top;
       <div class="product-tile">
         <div class="entry col-sm-5 col-sm-offset-0 col col-lg-3 col-lg-offset-1">
           <h3 class="product_title"><%= product.title %></h3>
+          <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+        <p><%=image_tag("logo.png", :class => ' col-xs-4 col-xs-offset-4')%></p>
+      </div>
+      <div class="modal-body">
+        <%= image_tag(product.image_url, :class => 'col-xs-offset-1 col-xs-5') %>
+        <div class=" col-xs-4 col-xs-offset-7">
+           <h2 class=""><%=product.title%><p class="popup-nomlatin"><%=product.nomlatin%></p></h2>
+             <%# <p class="popup-provenance"><%= sanitize(product.provenance, :class =>'popup-provenance')</p>%>
+            <p class=""> Certifié biologique par Ecocert </p>
+            <p class=""><%= sanitize(product.description, :class =>'')%></p>
+            <h4 class=""> PROPRIÉTÉS </h4>
+            <p class=""><%= sanitize(product.proprietes, :class =>'')%></p>
+            <div class="">
+              <span class=""><%=number_to_currency(product.price)%></span><br/>
+              <%= form_for(line_items_path(:quantity), remote: true) do |form|%>
+              <p>
+                <%= form.label :Qté%>
+                <%= form.select :quantity, (1..10) %>
+              <p>
+              <% end %>
+              <%= link_to image_tag("/elem/Btn-add.png", onmouseover: "this.src='#{asset_path('/elem/Btn-add-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-add.png')}'",:class =>"popup-add"), line_items_path(product_id: product), remote: true, :method => :post, :class => "popup-add" %>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
           <div class="product_img img-responsive">
             <%= image_tag(product.image_url, :class => 'the_img') %>
             <%= link_to( '#',class: %w(poplight discover), data: { rel: "popup_type1#{index}"}) do%>
