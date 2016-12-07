@@ -1,6 +1,5 @@
 class MapsController < ApplicationController
   skip_before_action :admin_only, only: [:show]
-  skip_before_action :authorize
   before_action :set_map, only: [:show, :edit, :update, :destroy]
 
   # GET /maps

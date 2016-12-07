@@ -1,18 +1,8 @@
 Depot::Application.routes.draw do
-
   get "pointsofsale/index"
   get 'admin' => 'admin#index'
 
-  controller :sessions do
-    get 'login' => :new
-    post 'login' => :create
-    delete 'logout' => :destroy
-  end
-
-  get "sessions/create"
-  get "sessions/destroy"
   get "showcase/Home"
-  #get "showcase/Map"
   get "showcase/Video"
   get "showcase/Idea"
   get "showcase/Legend"
@@ -34,25 +24,20 @@ Depot::Application.routes.draw do
   get 'paypal/checkout', to:'orders#paypal_checkout'
   get "instagram" => redirect("https://www.instagram.com/lebenefique/")
   get "facebook" => redirect("https://www.facebook.com/infusionslebenefique/?fref=ts")
-  resources :users
-
+  devise_for :users
 scope '(:locale)' do
   resources :orders
   resources :line_items
   resources :carts
   resources :products
   resources :maps
-  resources :users, only: [:update]
 
 
     match '/contacts',     to: 'contacts#new',             via: 'get'
     resources "contacts", only: [:new, :create]
-    resources :users, only: [:update]
 
     root 'showcase#Home', as: 'showcase'
 end
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
