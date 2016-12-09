@@ -160,12 +160,6 @@ text-align: center;
 
 
 @media screen and (min-width: 769px) {
-.img-top img{
-position: fixed;
-top:45px; left: 0; right:0;
-margin: auto;
-z-index: 1;
-}
 .text-vertical-center p {
 position: fixed; left: 0; right:0;
 margin: auto;
@@ -256,11 +250,6 @@ z-index:2
   html, body{
     height: 100%;
     width: 100%;
-  }
-  .img-top img{
-    position: absolute;
-    top:45px;left: 0; right:0;
-    margin: auto;
   }
 
 

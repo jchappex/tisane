@@ -62,8 +62,8 @@ background-position:top;
         <p><%=image_tag("logo.png", :class => ' col-xs-4 col-xs-offset-4')%></p>
       </div>
       <div class="modal-body">
-        <%= image_tag(product.image_url, :class => 'col-xs-offset-1 col-xs-5') %>
-        <div class=" col-xs-4 col-xs-offset-7">
+        <%= image_tag(product.image_url, :class => 'offset-sect-1 col-xs-offset-1 col-xs-5') %>
+        <div class="offset-sect-1 col-xs-4 col-xs-offset-0">
            <h2 class=""><%=product.title%><p class="popup-nomlatin"><%=product.nomlatin%></p></h2>
              <%# <p class="popup-provenance"><%= sanitize(product.provenance, :class =>'popup-provenance')</p>%>
             <p class=""> Certifié biologique par Ecocert </p>
@@ -84,6 +84,18 @@ background-position:top;
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="col-xs-12 col-xs-offset-0">
+          <hr>
+          <p><b> ENGAGEMENTS LE BÉNÉFIQUE</b><p>
+          <br>
+          <p><b>Choix du lieu de récolte:</b> Obtention de l’autorisation de récolte et Validation du respect du cahier des charges d’Ecocert</p>
+          <p><b>Choix des plantes:</b>  Soumission des spécimens botaniques retenus à des conservatoires botaniques pour authentification.</p>
+          <p><b>Séchage traditionnel:</b> Séchage traditionnel des tiges étalées en fines couches sur les claies</p>
+          <p><b>Conditionnement:</b>  Assemblage artisanal des tiges et des drapeaux et étiquetage assurant la traçabilité du produit</p>
+          <p><b>Planication des cueillettes:</b>  Récolte de données sur les conditions environnementales et recherches sur la morphologie de l’espèce et sur ses populations.</p>
+          <p><b>Récolte manuelle:</b> Cueillette effectuées à la main tige par tige dans le respect de la plante et de son environnement</p>
+          <p><b>Traitement spécique:</b> Traitement au CO2 , selon les normes d’Ecocert, en cas d’infestation par des insectes</p>
+        </div>
       </div>
     </div>
 

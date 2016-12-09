@@ -88,6 +88,7 @@ padding:0;
 
 body, html{height:100%;}
 
+
 #layout-main-page{
   min-height:100%;
 margin:0 auto;
@@ -160,6 +161,13 @@ position:relative;
 	margin-left: 17em;
 	padding: 1em;
 	background: white;
+}
+
+.img-top img{
+position: fixed;
+top:45px; left: 0; right:0;
+margin: auto;
+z-index: 1;
 }
 
 .top-title-menu{
@@ -304,4 +312,20 @@ a {color: #FF0}
 		display: none;
 	}
 }
+}
+
+
+/************** MOBILE ONLY *****/
+@media screen and (max-width: 768px){
+  .header-app{
+    padding-bottom: 110px;
+    border-bottom: 1px solid black;
+  }
+
+  .img-top img{
+    position: absolute;
+    top:52px;left: 0; right:0;
+    margin: auto;
+    width: 35vw;
+  }
 }
