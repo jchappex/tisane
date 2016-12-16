@@ -106,7 +106,8 @@ position:relative;
   margin-bottom: 15%;
 	height:70px;
   z-index: 100;
-	.fixed-middle{
+
+  .fixed-middle{
 		float: left;
 
 		a{
@@ -168,6 +169,12 @@ position: fixed;
 top:45px; left: 0; right:0;
 margin: auto;
 z-index: 1;
+}
+
+.img-head img{
+  position: absolute;
+  top:52px;left: 0; right:0;
+  margin: auto;
 }
 
 .top-title-menu{
@@ -317,9 +324,29 @@ a {color: #FF0}
 
 /************** MOBILE ONLY *****/
 @media screen and (max-width: 768px){
+
+  .fix-menu{
+  	position: absolute;
+  	z-index: 9999;
+  }
+
   .header-app{
     padding-bottom: 110px;
     border-bottom: 1px solid black;
+  }
+
+  .header-zone{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 110px;
+    background: white;
+    color: black;
+    z-index: 9999;
+  }
+
+  .top-title-menu{
+    display: none;
   }
 
   .img-top img{
@@ -328,4 +355,9 @@ a {color: #FF0}
     margin: auto;
     width: 35vw;
   }
+  .img-head img{
+  position: absolute;
+  top:52px;left: 0; right:0;
+  margin: auto;
+}
 }

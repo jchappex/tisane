@@ -3,6 +3,9 @@
 <html lang="en">
 <head>
    <title><%= yield(:title) %></title>
+   <meta charset="utf-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no"/>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -15,6 +18,7 @@ new WOW().init();
 </script>
 <body class="<%= controller.controller_name %>">
   <div id="layout-main-page">
+    <div class="header-zone">
     <div class="fix-menu">
 <nav id="topmenu">
     <li><a href="#" class="class-menu"><div class="line-menu elem-one"></div><div class="line-menu elem-two"></div><div class="line-menu elem-three"></div></a>
@@ -73,6 +77,7 @@ new WOW().init();
 </div>
 <div class="img-top visible-xs">
     <a href="Home"><img src="/elem/logo-mobile.png" alt="logo Le Bénéfique"/></a>
+</div>
 </div>
 <%= yield %>
 <footer class="footer-app">

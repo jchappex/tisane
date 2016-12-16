@@ -144,35 +144,12 @@ text-align: center;
 
 }
 
-.presse-txt h1{
-  font-family: 'Didot LT Std Bold Italic';
-  font-size: 50px;
-   border-bottom: 1px solid #b6a083;
-}
-
-.presse-txt p{
-  font-family: 'Roboto';
-  font-size: 10px;
-}
 
 
                                                                     /*  NORMAL DEVICE ONLY*/
 
 
 @media screen and (min-width: 769px) {
-.img-top img{
-position: fixed;
-top:45px; left: 0; right:0;
-margin: auto;
-z-index: 1;
-}
-
-.img-head img{
-position: relative;
-top:45px;
-margin: auto;
-z-index: 1;
-}
 
 .text-vertical-center p {
 position: fixed; left: 0; right:0;
@@ -254,6 +231,16 @@ z-index:2
 
 }
 
+.presse-txt h1{
+  font-family: 'Didot LT Std Bold Italic';
+  font-size: 50px;
+   border-bottom: 1px solid #b6a083;
+}
+
+.presse-txt p{
+  font-family: 'Roboto';
+  font-size: 10px;
+}
 
 
 
@@ -264,17 +251,6 @@ z-index:2
   html, body{
     height: 100%;
     width: 100%;
-  }
-  .img-top img{
-    position: absolute;
-    top:45px;left: 0; right:0;
-    margin: auto;
-  }
-  
-  .img-head img{
-    position: absolute;
-    top:45px;left: 0; right:0;
-    margin: auto;
   }
 
 
@@ -314,6 +290,16 @@ z-index:2
 
   .soliman{
     text-align: left;
+  }
+  .presse-txt h1{
+    font-family: 'Didot LT Std Bold Italic';
+    font-size: 30px;
+     border-bottom: 1px solid #b6a083;
+  }
+
+  .presse-txt p{
+    font-family: 'Roboto';
+    font-size: 10px;
   }
 
 }
