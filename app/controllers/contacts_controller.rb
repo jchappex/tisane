@@ -1,5 +1,4 @@
 class ContactsController < ApplicationController
-  skip_before_action :authorize
   skip_before_action :admin_only
   def new
     @contact = Contact.new

@@ -1,6 +1,11 @@
 class SessionsController < ApplicationController
   skip_before_action :authorize
   skip_before_action :admin_only
+  
+  def index
+    @users = User.order(:name)
+  end
+
   def new
   end
 
