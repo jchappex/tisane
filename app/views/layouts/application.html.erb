@@ -64,15 +64,15 @@ new WOW().init();
 </div>
 <%# app/views/showcase/Idea.html.erb%>
 <% if @check %>
-    <div class="img-top">
+    <div class="img-top"></div>
 <% else %>
-    <div class="img-head">
+    <div class="img-head"></div>
 <% end %>
+<div class="img-top hidden-xs">
     <a href="Home"><img src="/elem/logo2.png" alt="logo Le Bénéfique"/></a>
 </div>
 <div class="img-top visible-xs">
     <a href="Home"><img src="/elem/logo-mobile.png" alt="logo Le Bénéfique"/></a>
-</div>
 </div>
 <%= yield %>
 <footer class="footer-app">
@@ -88,7 +88,6 @@ new WOW().init();
   </div>
 </footer>
 </div>
-</body>
 <script>
    handler = Gmaps.build('Google');
        handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
@@ -134,4 +133,5 @@ new WOW().init();
        );
        wow.init();
      </script>
+    </body>
 </html>
