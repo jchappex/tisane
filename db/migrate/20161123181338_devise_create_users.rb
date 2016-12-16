@@ -9,6 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
       
+      t.string :name
       t.boolean :admin, default: 0
 
       ## Rememberable
