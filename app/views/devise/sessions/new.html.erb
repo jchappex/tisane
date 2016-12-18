@@ -1,41 +1,61 @@
-<h2>Log in</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %><br>
-    <%= f.input :password, required: false %><br>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
-<div class="deport_form">
-  <h2>Sign up</h2>
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <% if resource.errors.present? %>
-      <%= devise_error_messages! %>
-    <% end %>
-  
-    <div class="form-inputs">
-      <%= f.label :email %><br>
-      <div class="field">
-        <%= f.email_field :email, required: true, autofocus: true %>
-      </div>
-      <%= f.label :'Mot de passe' %><br>
-      <div class="field">
-        <%= f.password_field :password, required: true, hint: ("#{@minimum_password_length} caractère(s) minimum" if @minimum_password_length) %>
-      </div>
-      <%= f.label :'Confirmation du mot de passe' %><br>
-      <div class="field">
-        <%= f.password_field :password_confirmation, required: true %>
+<div class="log-and-sign">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="connect-account">
+          <h2>Connexion</h2>
+          <p> pour les clients ayant deja un compte</p>
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="form-inputs">
+          <div class="form-group required">
+            <label for="email" class="control-label">E-mail</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group required">
+            <label for="password" class="control-label">Mot de passe</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          </div>
+          <div class="form-actions">
+            <%= f.button :submit, "Log in" %>
+          </div>
+          <%= render "devise/shared/links" %>
+        <% end %>
       </div>
     </div>
-  
-    <div class="actions">
-      <%= f.button :submit, "Sign up" %>
+
+        <div class="col-xs-6">
+          <div class="create-account">
+            <div class="deport_form">
+              <h2>Creer un compte</h2>
+              <p> Merci d'entrer les informations suivantes pour creer un compte</p>
+              <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <% if resource.errors.present? %>
+                  <%= devise_error_messages! %>
+                <% end %>
+
+                <div class="form-inputs">
+                  <div class="form-group required">
+                    <label for="email" class="control-label">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group required">
+                    <label for="password" class="control-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="password">
+                  </div>
+                  <div class="form-group required">
+                    <label for="password_confirmation" class="control-label">Mot de passe</label>
+                    <input type="password_confirmation" class="form-control" id="password_confirmation">
+                </div>
+                </div>
+
+                <div class="actions">
+                  <%= f.button :submit, "Sign up" %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  <% end %>
-</div>
+  </div>

@@ -93,7 +93,7 @@ width: 100%;
 }
 
 .section-all h1{
-   font-family: 'Didot LT Std Bold Italic'
+   font-family: 'DidotLTStd-BoldItalic'
 }
 
 .section-all p {
@@ -156,7 +156,7 @@ position: fixed; left: 0; right:0;
 margin: auto;
 z-index: 1;
 font-size: 55px;
-font-family: 'Didot LT Std Bold Italic';
+font-family: 'DidotLTStd-BoldItalic';
 color: white;
 }
 
@@ -232,7 +232,7 @@ z-index:2
 }
 
 .presse-txt h1{
-  font-family: 'Didot LT Std Bold Italic';
+  font-family: 'DidotLTStd-BoldItalic';
   font-size: 50px;
    border-bottom: 1px solid #b6a083;
 }
@@ -257,7 +257,7 @@ z-index:2
   .text-vertical-center p {
     display: block;
   font-size: 4vh;
-  font-family: 'Didot LT Std Bold Italic';
+  font-family: 'DidotLTStd-BoldItalic';
   color: white;
   }
 
@@ -292,7 +292,7 @@ z-index:2
     text-align: left;
   }
   .presse-txt h1{
-    font-family: 'Didot LT Std Bold Italic';
+    font-family: 'DidotLTStd-BoldItalic';
     font-size: 30px;
      border-bottom: 1px solid #b6a083;
   }
