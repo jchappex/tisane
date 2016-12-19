@@ -51,7 +51,7 @@ new WOW().init();
             <% if current_user %>
               <li><p class="log-buttons"><%= button_to 'deconnexion', destroy_user_session_path, method: :delete %></p></li>
             <% else %>
-              <li class="log-buttons"><p><%= link_to 'INSCRIPTION', new_user_registration_path %><br /> <%= link_to '/ CONNEXION', new_user_session_path %></p></li>
+              <li class="log-buttons"><p><%= link_to "INSCRIPTION<br />/CONNEXION".html_safe, new_user_session_path %></p></li>
             <%end %>
             <li><%= link_to instagram_path do image_tag("/elem/insta.png", onmouseover: "this.src='#{asset_path('/elem/insta-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/insta.png')}'", width: '25') end %>
                 <%= link_to facebook_path do image_tag("/elem/facebook.png", onmouseover: "this.src='#{asset_path('/elem/facebook-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/facebook.png')}'", width: '13') end %>
@@ -68,22 +68,26 @@ new WOW().init();
 </div>
 <%# app/views/showcase/Idea.html.erb%>
 <% if @check %>
-    <div class="img-top"></div>
+    <div class="img-top hidden-xs">
+      <%= link_to image_tag("/elem/logo2.png"), home_path %>
+  </div>
+  <div class="img-top visible-xs">
+      <%= link_to image_tag("/elem/logo2.png"), home_path %>
+  </div>
 <% else %>
-    <div class="img-head"></div>
+    <div class="img-head margin-img hidden-xs">
+      <%= link_to image_tag("/elem/logo2.png"), home_path %>
+    </div>
+    <div class="img-head margin-img visible-xs">
+        <%= link_to image_tag("/elem/logo2.png"), home_path %>
+    </div>
 <% end %>
-<div class="img-top hidden-xs">
-    <a href="Home"><img src="/elem/logo2.png" alt="logo Le Bénéfique"/></a>
-</div>
-<div class="img-top visible-xs">
-    <a href="Home"><img src="/elem/logo-mobile.png" alt="logo Le Bénéfique"/></a>
-</div>
 </div>
 <%= yield %>
 <footer class="footer-app">
   <div class="container">
     <div class="row">
-      <div class="col-xs-offset-3 col-xs-7 fixed-middle">
+      <div class="col-xs-offset-0 col-xs-12 fixed-middle">
         <a href="#">Conditions generales</a>
         <a href="#">Mentions legales</a>
         <a href="#">FAQ</a>

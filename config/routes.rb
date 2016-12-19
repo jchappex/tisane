@@ -11,6 +11,7 @@ Depot::Application.routes.draw do
   get "store/index"
   get "pointsofsale/index"
   get 'pointsofsale' => 'pointsofsale#index'
+  get 'home' => 'showcase#Home'
   get 'idea' => 'showcase#Idea'
   get 'legend' => 'showcase#Legend'
   get 'workwithus' => 'showcase#Workwithus'
