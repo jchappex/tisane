@@ -51,7 +51,10 @@ new WOW().init();
             <% if current_user %>
               <li><p class="log-buttons"><%= button_to 'deconnexion', destroy_user_session_path, method: :delete %></p></li>
             <% else %>
-              <li class="log-buttons"><p><%= link_to "INSCRIPTION<br />/CONNEXION".html_safe, new_user_session_path %></p></li>
+              <li class="log-buttons"><p><%= link_to 'INSCRIPTION', new_user_registration_path %><br /> <%= link_to '/ CONNEXION', new_user_session_path %></p></li>
+                <button type="button" data-toggle="modal" data-target="#myModal">
+                  Connexion / Inscription
+                </button>
             <%end %>
             <li><%= link_to instagram_path do image_tag("/elem/insta.png", onmouseover: "this.src='#{asset_path('/elem/insta-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/insta.png')}'", width: '25') end %>
                 <%= link_to facebook_path do image_tag("/elem/facebook.png", onmouseover: "this.src='#{asset_path('/elem/facebook-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/facebook.png')}'", width: '13') end %>

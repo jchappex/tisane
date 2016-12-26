@@ -10,18 +10,18 @@
 		<div class="container">
 			<div class="row">
 				<section class = "home-links col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">
-				<div><img class="img-responsive img-home" src="/elem/logo2.png" alt="logo Le Bénéfique"/></div>
-					<div class=" btn-div">
-						<%= link_to store_path do
-							image_tag("/elem/decouvrir.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir.png')}'", width: '132')
-					end %>
-					<button type="button" data-toggle="modal" data-target="#myModal">
-            <%= image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132') %>
-          </button>
-				 		<%#= link_to video_path do
-     					image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132')
-				 	end %>
-				</div>
+  				<div><img class="img-responsive img-home" src="/elem/logo2.png" alt="logo Le Bénéfique"/></div>
+  					<div class=" btn-div">
+  						<%= link_to store_path do
+  							image_tag("/elem/decouvrir.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir.png')}'", width: '132')
+  					end %>
+  					<button type="button" data-toggle="modal" data-target="#myModal">
+              <%= image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132') %>
+            </button>
+  				 		<%#= link_to video_path do
+       					image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132')
+  				 	end %>
+  				</div>
 			</section>
 		</div>
 	</div>
@@ -44,7 +44,5 @@
 		    </video>
       </div>
     </div>
-  </div>
-</div>
 	</body>
 </html>
