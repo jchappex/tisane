@@ -63,6 +63,21 @@
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>"><%= value %></div>
   <% end %>
+  <% if @check %>
+      <div class="img-top hidden-xs">
+        <%= link_to image_tag("/elem/logo2.png"), home_path %>
+    </div>
+    <div class="img-top visible-xs">
+        <%= link_to image_tag("/elem/logo-mobile.png"), home_path %>
+    </div>
+  <% else %>
+      <div class="img-head margin-img hidden-xs">
+        <%= link_to image_tag("/elem/logo2.png"), home_path %>
+      </div>
+      <div class="img-head margin-img visible-xs">
+          <%= link_to image_tag("/elem/logo-mobile.png"), home_path %>
+      </div>
+  <% end %>
 </div>
 <%= yield %>
 <div class="hover-footer">
@@ -83,7 +98,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Connexion / InscriptionM</h4>
+        <h4 class="modal-title" id="myModalLabel">Connexion / Inscription</h4>
       </div>
       <div class="modal-body">
         <h2>Log in</h2>
@@ -92,7 +107,7 @@
             <%= f.email_field :email, required: false, autofocus: true %><br>
             <%= f.password_field :password, required: false %><br>
           </div>
-        
+
           <div class="form-actions">
             <%= f.submit "Log in" %>
           </div>
@@ -114,7 +129,7 @@
                 <%= f.password_field :password_confirmation, required: true %>
               </div>
             </div>
-          
+
             <div class="actions">
               <%= f.submit "Sign up" %>
             </div>

@@ -39,19 +39,22 @@
 }
 
 .img_tasse{
-  top: 130px;
-  left : -60px;
-  max-width: 110px;
 }
 
 .block-sultan h1{
   font-family: 'Futura Condensed Medium';
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
   z-index: 3;
   display: block;
   left: -50px;
 top : 210px;
+}
+
+@media screen and (min-width: 985px) {
+  .block-sultan h1{
+    font-size: 45px;
+  }
 }
 
 .img_back_soli{
@@ -62,24 +65,31 @@ top : 210px;
 
 .img_back_françois{
   z-index: 1;
-  top: 170px;
   left : 0;
+  position: relative;
   left: -40px;
 }
 
 .illu_front{
-
-  top: -410px;
   z-index: 2;
+  position: absolute;
+  margin-top: 300px;
 }
 
 p.txt_soli{
+  position: absolute;
   font-family: 'Didot LT Std Bold Italic';
   text-align: left;
-  font-size: 25px;
+  font-size: 2vw;
   color: white;
   z-index: 2;
-  top: -800px;
+  color: black;
+}
+
+@media screen and (min-width: 1150px) {
+  p.txt_soli{
+    font-size: 25px;
+  }
 }
 
 .product-container{
