@@ -28,13 +28,13 @@
         <li class="limen"><%= link_to 'PRESSE', presse_path %></li>
         <li class="limen"><%= link_to 'CONTACT', contact_path %></li>
         <li class="limen"><img src="/elem/Btn-langue.png" alt="bouton-langue" /></li>
-        <li class="limen"> <%= link_to image_tag("/elem/shopping-bag.png", :class =>"panier-header-menu"), current_cart %></li>
-              <ul class="nav pull-right">
-                <div class="cart-count-menu">
-                  <% if current_cart %>
-                    <li><%= current_cart.cart_count%></li>
-                  <% end %>
-                </div>
+        <li class="limen"><%= link_to image_tag("/elem/shopping-bag.png", :class =>"panier-header-menu"), current_cart %></li>
+            <ul class="nav pull-right">
+              <div class="cart-count-menu">
+                <% if current_cart %>
+                  <li><%= current_cart.cart_count%></li>
+                <% end %>
+              </div>
             </ul>
             <% if current_user && current_user.admin? %>
             <ul>
@@ -48,11 +48,11 @@
               <li><p class="log-buttons"><%= button_to 'deconnexion', destroy_user_session_path, method: :delete %></p></li>
             <% else %>
               <li class="log-buttons"><p>
-                <a data-toggle="modal" data-target="#myModal2">INSCRIPTION <br /> / CONNEXION</a>
+                <a data-toggle="modal" data-target="#myModal2">INSCRIPTION / CONNEXION</a>
               </p></li>
             <%end %>
             <li><%= link_to instagram_path do image_tag("/elem/insta.png", onmouseover: "this.src='#{asset_path('/elem/insta-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/insta.png')}'", width: '25') end %>
-                <%= link_to facebook_path do image_tag("/elem/facebook.png", onmouseover: "this.src='#{asset_path('/elem/facebook-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/facebook.png')}'", width: '13') end %>
+              <%= link_to facebook_path do image_tag("/elem/facebook.png", onmouseover: "this.src='#{asset_path('/elem/facebook-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/facebook.png')}'", width: '13') end %>
             </li>
       <ul>
       </div>
@@ -79,6 +79,75 @@
       </div>
   <% end %>
 </div>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 100%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Connexion / Inscription</h4>
+      </div>
+      <div class="modal-body">
+        <div class="log-and-sign">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="connect-account">
+                  <h2>Connexion</h2>
+                  <p> pour les clients ayant deja un compte</p>
+                  <%= form_for(:user, url: session_path(:user)) do |f| %>
+                  <div class="form-inputs">
+                    <div class="form-group required">
+                      <%= f.label :'E-mail', class: "control-label" %>
+                      <%= f.email_field :email, class: "form-control", id: "email" %>
+                    </div>
+                    <div class="form-group required">
+                      <%= f.label :'Mot de passe', class: "control-label" %>
+                      <%= f.password_field :password, class: 'form-control', id: 'password' %>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <%= f.submit :"Log in" %>
+                  </div>
+                  <%= render "devise/shared/links" %>
+                <% end %>
+              </div>
+            </div>
+                <div class="col-xs-6">
+                  <div class="create-account">
+                    <div class="deport_form">
+                      <h2>Creer un compte</h2>
+                      <p> Merci d'entrer les informations suivantes pour creer un compte</p>
+                      <%= form_for(:user, url: registration_path(:user)) do |f| %>
+                        <div class="form-inputs">
+                          <div class="form-group required">
+                            <%= f.label :'E-mail', class: "control-label" %>
+                            <%= f.email_field :email, class: "form-control", id: "email" %>
+                          </div>
+                          <div class="form-group required">
+                            <%= f.label :'Mot de passe', class: "control-label" %>
+                            <%= f.password_field :password, class: 'form-control', id: 'password' %>
+                          </div>
+                          <div class="form-group required">
+                            <%= f.label :'Confirmation du mot de passe', class: "control-label" %>
+                            <%= f.password_field :password_confirmation, class: 'form-control', id: 'password_confirmation' %>
+                          </div>
+                        </div>
+                        <div class="actions">
+                          <%= f.submit "S'inscrire" %>
+                        </div>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 <%= yield %>
 <div class="hover-footer">
     <%= link_to image_tag("/elem/rectangle.png", :style =>"position:absolute; bottom:-22px;left: 50%", :class =>"hover-rect"), current_cart %>
@@ -90,54 +159,6 @@
     <a href="#">Credits</a>
   </div>
 </footer>
-</div>
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-  <div class="modal-dialog" role="document" style="width: 100%;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Connexion / Inscription</h4>
-      </div>
-      <div class="modal-body">
-        <h2>Log in</h2>
-        <%= form_for(:user, url: session_path(:user)) do |f| %>
-          <div class="form-inputs">
-            <%= f.email_field :email, required: false, autofocus: true %><br>
-            <%= f.password_field :password, required: false %><br>
-          </div>
-
-          <div class="form-actions">
-            <%= f.submit "Log in" %>
-          </div>
-        <% end %>
-        <div class="deport_form">
-          <h2>Sign up</h2>
-          <%= form_for(:user, url: registration_path(:user)) do |f| %>
-            <div class="form-inputs">
-              <%= f.label :email %><br>
-              <div class="field">
-                <%= f.email_field :email, required: true, autofocus: true %>
-              </div>
-              <%= f.label :'Mot de passe' %><br>
-              <div class="field">
-                <%= f.password_field :password, required: true, hint: ("#{@minimum_password_length} caractère(s) minimum" if @minimum_password_length) %>
-              </div>
-              <%= f.label :'Confirmation du mot de passe' %><br>
-              <div class="field">
-                <%= f.password_field :password_confirmation, required: true %>
-              </div>
-            </div>
-
-            <div class="actions">
-              <%= f.submit "Sign up" %>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <script>
    handler = Gmaps.build('Google');
