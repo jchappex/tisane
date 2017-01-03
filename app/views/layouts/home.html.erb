@@ -20,12 +20,12 @@
     <li><a href="#" class="class-menu"><div class="line-menu elem-one"></div><div class="line-menu elem-two"></div><div class="line-menu elem-three"></div></a>
       <div id="submenu">
         <ul>
+        <li class="limen"><%= link_to 'ACCUEIL', home_path %></li>
         <li class="limen"><%= link_to 'IDÉE', idea_path %></li>
         <li class="limen"><%= link_to 'LÉGENDE', legend_path %></li>
         <li class="limen"><%= link_to 'PRODUITS', store_path %></li>
         <li class="limen"><%= link_to 'POINTS DE VENTE', pointsofsale_path,  data: { no_turbolink: false } %></li>
         <li class="limen"><%= link_to 'TRAVAILLER AVEC NOUS', workwithus_path %></li>
-        <li class="limen"><%= link_to 'PRESSE', presse_path %></li>
         <li class="limen"><%= link_to 'CONTACT', contact_path %></li>
         <li class="limen"><img src="/elem/Btn-langue.png" alt="bouton-langue" /></li>
         <li class="limen"><%= link_to image_tag("/elem/shopping-bag.png", :class =>"panier-header-menu"), current_cart %></li>
@@ -62,21 +62,6 @@
 <div id="flash">
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>"><%= value %></div>
-  <% end %>
-  <% if @check %>
-      <div class="img-top hidden-xs">
-        <%= link_to image_tag("/elem/logo2.png"), home_path %>
-    </div>
-    <div class="img-top visible-xs">
-        <%= link_to image_tag("/elem/logo-mobile.png"), home_path %>
-    </div>
-  <% else %>
-      <div class="img-head margin-img hidden-xs">
-        <%= link_to image_tag("/elem/logo2.png"), home_path %>
-      </div>
-      <div class="img-head margin-img visible-xs">
-          <%= link_to image_tag("/elem/logo-mobile.png"), home_path %>
-      </div>
   <% end %>
 </div>
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
