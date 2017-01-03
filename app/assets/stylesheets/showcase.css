@@ -12,6 +12,48 @@ height: 100%;
 width: 100%;
 }
 
+.slide-img-div{
+  width: 0;
+  height: 300px;
+overflow: hidden;
+-moz-animation: slide 1s ease 1.5s forwards;
+-webkit-animation: slide 1s ease 1.5s forwards;
+-o-animation: slide 1s ease 1.5s forwards;
+-ms-animation: slide 1s ease 1.5s forwards;
+animation: slide 1s ease 1.5s forwards;
+}
+
+.slide-img{
+  height: 380px;
+}
+
+@-moz-keyframes slide /* Firefox */
+{
+from {width: 0;}
+to {width: 500px;}
+}
+
+@-webkit-keyframes slide /* Safari and Chrome */
+{
+from {width: 0;}
+to {width: 500px;}
+}
+
+
+@-ms-keyframes slide /* IE10 */
+{
+from {width: 0;}
+to {width: 500px;}
+}
+
+@keyframes slide
+{
+from {width: 0;}
+to {width: 500px;}
+}
+
+
+
 .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -128,22 +170,6 @@ text-align: center;
 .txt-center{
   text-align: center;
 }
-
-.wrapper
-{
-
-}
-
-.scrollme
-{
-
-}
-
-.animateme
-{
-
-}
-
 
 
                                                                     /*  NORMAL DEVICE ONLY*/

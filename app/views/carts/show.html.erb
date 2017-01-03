@@ -14,7 +14,7 @@
 <section class="cart-section">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-5 col-sm-offset-0 col-md-5 col-md-offset-0 resume-cart">
+      <div class="col-md-5 col-md-offset-0 resume-cart">
         <h1 style="float:left;position:relative;top:-50px;left:90px;"> Panier </h1>
         <hr style="height:1px; width: 100%;border:none;color:#333;background-color:#333;">
         <table class="test">
@@ -36,9 +36,9 @@
           <% end %>
         </table>
       </div>
-      <div class="total-and-checkout col-sm-3 col-sm-offset-4">
+      <div class="total-and-checkout col-md-3 col-md-offset-4">
         <h1 style="position:relative; top:-30px;"> Résumé </h1>
-        <hr style="height:800px; width: 1px;border:none;color:#333;background-color:#333; position:absolute; top: -60px;">
+        <hr style="height:180px; width: 1px;border:none;color:#333;background-color:#333; position:absolute; top: -60px;">
         <tr class="total_line">
           <td colspan="2">Total</td>
           <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
