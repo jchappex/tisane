@@ -3339,4 +3339,33 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+@-webkit-keyframes unfoldInRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes unfoldInRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.unfoldInRight {
+  -moz-animation: unfoldInRight 1s ease forwards;
+  -webkit-animation: unfoldInRight 1s ease forwards;
+  -o-animation: unfoldInRight 1s ease forwards;
+  -ms-animation: unfoldInRight 1s ease forwards;
+  animation: unfoldInRight 1s ease forwards;
+  overflow: hidden;
+  width: 0;
+}
+
 }
