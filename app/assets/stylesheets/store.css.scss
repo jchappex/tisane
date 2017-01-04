@@ -35,8 +35,6 @@
   margin-bottom: 20px;
 }
 
-.img_tasse{
-}
 
 .block-sultan h1{
   font-family: 'Futura Condensed Medium';
@@ -73,6 +71,13 @@ top : 210px;
   margin-top: 300px;
 }
 
+
+.bloc-overlap{
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
 p.txt_soli{
   position: absolute;
   font-family: 'Didot LT Std Bold Italic';
@@ -87,7 +92,6 @@ p.txt_soli{
   p.txt_soli{
     font-size: 25px;
   }
-}
 
 .product-container{
   position: relative;
@@ -95,7 +99,7 @@ p.txt_soli{
 }
 
 .product-tile{
-  margin-right: -210px;
+}
 }
 
 
@@ -125,39 +129,43 @@ overflow: hidden;
 text-overflow: ellipsis;
 }
 
+.sect-produit{
+  margin: 4%;
+}
+
 .product_img{
-  margin-right: 0;
-  padding: 0;
-  display: block;
-  position: relative;
-  width: 100%;
 }
 
 .the_img{
-  margin: 0;
   padding: 0;
+  margin: 0;
+  position: relative;
     width: 280px;
     max-width: 280px;
 }
 
 .the_img:hover + .discover{
   position: absolute;
-  top: 145px;
-  left: 70px;
+  width: 100%;
+  top: 195px;
   display: block;
   font-family: 'Didot LT Std Roman';
   font-size: 18px;
+  margin: 0 auto;
+left: 0;
+right: 0;
 }
 
 .the_img + .discover:hover{
   position: absolute;
-  top: 145px;
-  left: 70px;
+  width: 100%;
+  top: 195px;
   display: block;
-  font-family: 'Didot LT Pro Bold';
-  text-decoration: none;
-  color: black;
+  font-family: 'Didot LT Std Roman';
   font-size: 18px;
+  margin: 0 auto;
+left: 0;
+right: 0;
 
 }
 
@@ -173,19 +181,44 @@ text-overflow: ellipsis;
   .the_img{
     opacity: 0.6;
   }
-}
+  .discover{
+    -moz-animation: discover 0.3s ease forwards;
+    -webkit-animation: discover 0.3s ease forwards;
+    -o-animation: discover 0.3s ease forwards;
+    -ms-animation: discover 0.3s ease forwards;
+    animation: discover 0.3s ease forwards;
+    overflow: hidden;
+  }
+  @-webkit-keyframes discover {
+    from {
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+      visibility: visible;
+    }
 
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes discover {
+    from {
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+}
 
 
 .discover {
   display: none;
-  position: absolute;
-  top: 5vw;
-  left: 2.5vw;
-  color: black;
-  font-size: 1.2vw;
-  border-style: solid;
-  border-width: 2px;
 }
 
 .line_title{
