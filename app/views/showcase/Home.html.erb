@@ -15,7 +15,7 @@
   						<%= link_to store_path do
   							image_tag("/elem/decouvrir.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir.png')}'", width: '132')
   					end %>
-  					<button type="button" data-toggle="modal" data-target="#myModal">
+  					<button class="button-film" type="button" data-toggle="modal" data-target="#myModal">
               <%= image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132') %>
             </button>
   				 		<%#= link_to video_path do
@@ -40,7 +40,6 @@
       <div class="modal-body">
         <video loop controls="controls" style="width: 100%; height: 100%">
 	        <source src="/elem/Le_Benefique_2560p_1.mp4" type="video/mp4">
-	        <source src="video/big_buck_bunny.ogv" type="video/ogg">
 		    </video>
       </div>
     </div>

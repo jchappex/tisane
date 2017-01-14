@@ -21,7 +21,6 @@ background-image:url('/elem/photo-2-idea.jpg');
 }
 
 
-
 .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -38,6 +37,15 @@ background-image:url('/elem/photo-2-idea.jpg');
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.button-film{
+  outline:none;
+  background-color:Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
 }
 
 @media (min-aspect-ratio: 16/9) {

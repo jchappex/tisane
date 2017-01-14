@@ -44,14 +44,12 @@
       <div class="container">
         <div class="row col-xs-10 col-xs-offset-0 col-md-10 col-md-offset-1">
           <% @type1.each_with_index do |product, index| %>
-          <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col col-lg-3 col-lg-offset-1">
+          <div class="col-sm-5 col-sm-offset-1 col col-lg-3 col-lg-offset-1 product_img">
             <h3 class=""><%= product.title %></h3>
-            <div class="product_img">
               <%= image_tag(product.image_url, :class => 'the_img') %>
               <%= link_to( '#myModal',class: "%w(poplight discover", data: { toggle: "modal"}) do%>
               <%= image_tag("/elem/decouvrir-shop.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-shop-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir-shop.png')}'", :style => "width:135px") %>
               <% end %>
-          </div>
             <div id="myModal" class="modal fade" role="dialog">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
