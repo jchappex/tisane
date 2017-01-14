@@ -25,20 +25,20 @@ $(window).scroll(function()
 	//check scroll direction
 	if(previousScroll < scrollPos)//scrolling down
 	{
-		if(scrollPos > ( (elemHeight[currentElement] / 2) + elemOffset[currentElement]) )
+		if(scrollPos > ( (elemHeight[currentElement] / 2) + elemOffset[currentElement] / 2) )
 		{
 			currentElement++;//we passed to the next element of the collection because more than 50% of that element is visible now
 		}
 	}
 	else if(previousScroll > scrollPos)//scrolling up
 	{
-		if(scrollPos < ( (elemHeight[currentElement - 1] / 2) + elemOffset[currentElement - 1]) )
+		if(scrollPos < ( (elemHeight[currentElement - 1] * 2) + elemOffset[currentElement - 1] * 2) )
 		{
 			currentElement--;//we passed to the previuos element of the collection because more than 50% of that element is visible now
 		}
 	}
 	previousScroll = scrollPos;
-	TweenMax.to(timerObject, .5, {a:1, onComplete:timerComplete});
+	TweenMax.to(timerObject, 2.9, {a:1, onComplete:timerComplete});
 });
 
 function timerComplete()

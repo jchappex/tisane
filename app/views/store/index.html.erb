@@ -27,17 +27,15 @@
       <header id="top" class="header-store">
         <div class="img-top container">
           <div class="row">
-            <p class="col-xs-3 col-xs-offset-5 col-lg-2 col-lg-offset-5"> nos collections</p>
+
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <h1 class="col-xs-4 col-xs-offset-4">LES INFUSIONS DU SULTAN</h1>
-          </div>
+        <div class="container shop-header-container">
           <div class="row sect-overlap">
+            <div class="col-xs-4 col-xs-offset-4 bloc-overlap title-sect"><h1>LES INFUSIONS DU SULTAN</h1></div>
             <div class="col-xs-9 col-xs-offset-1"><%=image_tag("photo-back-section-1.png")%></div>
-            <div class="col-xs-4 col-xs-offset-7 bloc-overlap"><%=image_tag("illu-front-section-1.png")%></div>
-            <div class="col-xs-5 col-xs-offset-2 bloc-overlap"><p>Les infusions du sultan sont cueillies à la main, de manière raisonnée par le dernier peuple nomade de Turquie. Les villageois perpétuent ainsi leur mode de vie traditionnel et protège la biodiversité des régions concernés. Découvrez nos infusions de fleur de lavande, la sauge de montagne, le thym ou le tilleul.</p></div>
+            <div class="col-xs-4 col-xs-offset-7 bloc-overlap img_soli"><%=image_tag("illu-front-section-1.png")%></div>
+            <div class="col-xs-5 col-xs-offset-2 bloc-overlap txt_soli"><p>Les infusions du sultan sont cueillies à la main, de manière raisonnée par le dernier peuple nomade de Turquie. Les villageois perpétuent ainsi leur mode de vie traditionnel et protège la biodiversité des régions concernés. Découvrez nos infusions de fleur de lavande, la sauge de montagne, le thym ou le tilleul.</p></div>
           </div>
         </div>
       </header>
@@ -47,10 +45,9 @@
           <div class="col-sm-5 col-sm-offset-1 col col-lg-3 col-lg-offset-1 product_img">
             <h3 class=""><%= product.title %></h3>
               <%= image_tag(product.image_url, :class => 'the_img') %>
-              <%= link_to( '#myModal',class: "%w(poplight discover", data: { toggle: "modal"}) do%>
+              <%= link_to( '#myModal#{index}',class: "%w(poplight discover", data: { toggle: "modal"}) do%>
               <%= image_tag("/elem/decouvrir-shop.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-shop-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir-shop.png')}'", :style => "width:135px") %>
-              <% end %>
-            <div id="myModal" class="modal fade" role="dialog">
+            <div id="myModal#{index}" class="modal fade" role="dialog">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -101,6 +98,84 @@
           <% end %>
         </div>
       </div>
+      <%end %>
+    </section>
+    <section class="product_section_1">
+      <header id="top" class="header-store">
+        <div class="img-top container">
+          <div class="row">
+
+          </div>
+        </div>
+        <div class="container shop-header-container">
+          <div class="row sect-overlap">
+            <div class="col-xs-4 col-xs-offset-4 bloc-overlap title-sect"><h1>LES INFUSIONS DU ROI</h1></div>
+            <div class="col-xs-9 col-xs-offset-1"><%=image_tag("photo-back-section-2.jpg")%></div>
+            <div class="col-xs-4 col-xs-offset-7 bloc-overlap img_soli"><%=image_tag("illu-front-section-2.jpg")%></div>
+            <div class="col-xs-5 col-xs-offset-2 bloc-overlap txt_soli"><p>Les infusions du sultan sont cueillies à la main, de manière raisonnée par le dernier peuple nomade de Turquie. Les villageois perpétuent ainsi leur mode de vie traditionnel et protège la biodiversité des régions concernés. Découvrez nos infusions de fleur de lavande, la sauge de montagne, le thym ou le tilleul.</p></div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row col-xs-10 col-xs-offset-0 col-md-10 col-md-offset-1">
+          <% @type1.each_with_index do |product, index| %>
+          <div class="col-sm-5 col-sm-offset-1 col col-lg-3 col-lg-offset-1 product_img">
+            <h3 class=""><%= product.title %></h3>
+              <%= image_tag(product.image_url, :class => 'the_img') %>
+              <%= link_to( '#myModal#{index}',class: "%w(poplight discover", data: { toggle: "modal"}) do%>
+              <%= image_tag("/elem/decouvrir-shop.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-shop-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir-shop.png')}'", :style => "width:135px") %>
+            <div id="myModal#{index}" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p><%=image_tag("logo.png", :class => ' col-xs-4 col-xs-offset-4')%></p>
+                  </div>
+                  <div class="modal-body">
+                    <%= image_tag(product.image_url, :class => 'offset-sect-1 col-xs-offset-1 col-xs-5') %>
+                    <div class="offset-sect-1 col-xs-4 col-xs-offset-0">
+                       <h2 class=""><%=product.title%><p class="popup-nomlatin"><%=product.nomlatin%></p></h2>
+                         <%# <p class="popup-provenance"><%= sanitize(product.provenance, :class =>'popup-provenance')</p>%>
+                        <p class=""> Certifié biologique par Ecocert </p>
+                        <p class=""><%= sanitize(product.description, :class =>'')%></p>
+                        <h4 class=""> PROPRIÉTÉS </h4>
+                        <p class=""><%= sanitize(product.proprietes, :class =>'')%></p>
+                        <div class="">
+                          <span class=""><%=number_to_currency(product.price)%></span><br/>
+                          <%= form_for(line_items_path(:quantity), remote: true) do |form|%>
+                          <p>
+                            <%= form.label :Qté%>
+                            <%= form.select :quantity, (1..10) %>
+                          <p>
+                          <% end %>
+                          <%= link_to image_tag("/elem/Btn-add.png", onmouseover: "this.src='#{asset_path('/elem/Btn-add-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-add.png')}'",:class =>"popup-add"), line_items_path(product_id: product), remote: true, :method => :post, :class => "popup-add" %>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="col-xs-12 col-xs-offset-0">
+                        <hr>
+                        <p><b> ENGAGEMENTS LE BÉNÉFIQUE</b><p>
+                        <br>
+                        <p><b>Choix du lieu de récolte:</b> Obtention de l’autorisation de récolte et Validation du respect du cahier des charges d’Ecocert</p>
+                        <p><b>Choix des plantes:</b>  Soumission des spécimens botaniques retenus à des conservatoires botaniques pour authentification.</p>
+                        <p><b>Séchage traditionnel:</b> Séchage traditionnel des tiges étalées en fines couches sur les claies</p>
+                        <p><b>Conditionnement:</b>  Assemblage artisanal des tiges et des drapeaux et étiquetage assurant la traçabilité du produit</p>
+                        <p><b>Planication des cueillettes:</b>  Récolte de données sur les conditions environnementales et recherches sur la morphologie de l’espèce et sur ses populations.</p>
+                        <p><b>Récolte manuelle:</b> Cueillette effectuées à la main tige par tige dans le respect de la plante et de son environnement</p>
+                        <p><b>Traitement spécique:</b> Traitement au CO2 , selon les normes d’Ecocert, en cas d’infestation par des insectes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+      <%end %>
     </section>
           <!-- Trigger the modal with a button -->
 

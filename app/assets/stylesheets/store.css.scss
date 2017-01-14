@@ -27,30 +27,38 @@
 }
 
 
- .title{
-   display: block;
-  top: 110px;
-  font-size: 25px;
+ .bloc-overlap h1{
+  font-size: 28px;
+  z-index: 9999;
+  color: black;
+}
+
+.title-sect{
+  position: absolute;
+  top: -50px;
+  z-index: 9999;
   font-family: 'Didot LT Std Italic';
-  margin-bottom: 20px;
 }
 
+@media screen and (max-width: 769px) {
+  .bloc-overlap h1{
+   font-size: 3vw;
+   z-index: 9999;
+   color: black;
+ }
 
-.block-sultan h1{
-  font-family: 'Futura Condensed Medium';
-  font-size: 4vw;
-  text-align: center;
-  z-index: 3;
-  display: block;
-  left: -50px;
-top : 210px;
+ .title-sect{
+   position: absolute;
+   top: -50px;
+   z-index: 9999;
+   font-family: 'Didot LT Std Italic';
+ }
+
+ .shop-header-container{
+   margin-top: 200px;
+ }
 }
 
-@media screen and (min-width: 985px) {
-  .block-sultan h1{
-    font-size: 45px;
-  }
-}
 
 .img_back_soli{
   z-index: 1;
@@ -65,31 +73,30 @@ top : 210px;
   left: -40px;
 }
 
-.illu_front{
-  z-index: 2;
-  position: absolute;
-  margin-top: 300px;
+.img_soli{
+  bottom: 100px;
 }
 
 
 .bloc-overlap{
   position: absolute;
-  bottom: 0;
-  color: white;
+  bottom: 8%;
+
 }
 
-p.txt_soli{
+.txt_soli{
+  display: block;
   position: absolute;
   font-family: 'Didot LT Std Bold Italic';
   text-align: left;
+  bottom: 15%;
   font-size: 2vw;
   color: white;
   z-index: 2;
-  color: black;
 }
 
 @media screen and (min-width: 1150px) {
-  p.txt_soli{
+  .txt_soli{
     font-size: 25px;
   }
 }
