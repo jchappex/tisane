@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
   skip_before_action :admin_only, only: [:new, :create]
   before_action :set_cart, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /orders
   # GET /orders.json
   def index
@@ -30,25 +30,31 @@ class OrdersController < ApplicationController
 
   def summary
   end
+  
+  def confirm_pay
+  end
+
+  def cancel_pay
+  end
 
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new(order_params)
-    @order.add_line_items_from_cart(@cart)
-
-    respond_to do |format|
-      if @order.save
-        Cart.destroy(session[:cart_id])
-        session[:cart_id] = nil
-
-        format.html{redirect_to store_url, notice:'Thank you for your order'}
-        format.json{render action: 'show', status: :created, location: @order}
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @order.errors, status: :unprocessable_entity }
-      end
+    @cart = Cart.find(session[:cart_id])
+    values = {
+      business: "merchant@gotealeaf.com",
+      cmd: "_cart",
+      upload: '2',
+      return: "https://tisane-jovien1.c9users.io/confirm/pay",
+      cancel_return: "https://tisane-jovien1.c9users.io/cancel/pay",
+      currency_code: 'EUR',
+    }
+    @cart.line_items.each_with_index do |l, i|
+      values["item_name_#{i+1}"] = l.product.title
+      values["amount_#{i+1}"] = l.product.price.to_f
+      values["quantity_#{i+1}"] = l.quantity
     end
+    redirect_to "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 
   # PATCH/PUT /orders/1
@@ -76,20 +82,20 @@ class OrdersController < ApplicationController
   end
 
   def paypal_checkout
-    Cart.find(session[:cart_id])
-    ppr = PayPal::Recurring.new(
-    return_url: store_url,
-    cancel_url: store_url,
-    description: "description here")
-    #amount: @cart.total_price
-    #currency: "USD"
-    #)
-    response = ppr.checkout
-    if response.valid?
-      redirect_to response.checkout_url
-    else
-      raise response.errors.inspect
+    @cart = Cart.find(session[:cart_id])
+    values = {
+      business: "merchant@gotealeaf.com",
+      cmd: "_cart",
+      upload: '2',
+      return: "https://tisane-jovien1.c9users.io/confirm/pay",
+      currency_code: 'EUR',
+    }
+    @cart.line_items.each_with_index do |l, i|
+      values["item_name_#{i+1}"] = l.product.title
+      values["amount_#{i+1}"] = l.product.price.to_f
+      values["quantity_#{i+1}"] = l.quantity
     end
+    redirect_to "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 
   private

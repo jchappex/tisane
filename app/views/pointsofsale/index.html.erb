@@ -12,6 +12,7 @@
       </div>
     </div>
   </div>
+  <script src="//maps.google.com/maps/api/js?key=AIzaSyChlLKUJvuUVdSkBvg7Mf1UhdjRoMyRPjs " ></script>
     <script type="text/javascript">
 
     function initialize() {
@@ -26,5 +27,35 @@
     });
   };
     </script>
+    <script>
+   handler = Gmaps.build('Google');
+       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+          markers = handler.addMarkers(<%=raw @hash.to_json %>);
+          handler.bounds.extendWith(markers);
+          $( document ).ready(function() {
+           setInterval(function(){
+               $(function () {
+                   $.ajax({
+                     type:"GET",
+                     url:"/path_to_controller_action",
+                     dataType:"json",
+                     data: {some_id:1},
+                     success:function(result){
+                       for (var i = 0; i < markers.length; i++) {
+                         markers[i].setMap(null);
+                         handler.removeMarkers(markers);
+                       }
+                       markers = [10];
+                       markers = handler.addMarkers(result);
+                       handler.bounds.extendWith(markers);
+                     }
+                   })
+               });
+              }, 10000);
+           handler.fitMapToBounds();
+           handler.getMap().setZoom(5);
+           });
+       });
+</script>
   </body>
 </html>
