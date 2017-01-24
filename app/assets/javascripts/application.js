@@ -22,7 +22,4 @@
 //= require gmaps/google
 //= require paraxify.js
 //= require wow.js
-//= require TweenMax.min.js
-//= require ScrollToPlugin.min.js
-//= require autoscroll.js
 //= require_tree .

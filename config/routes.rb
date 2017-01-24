@@ -7,6 +7,7 @@ Depot::Application.routes.draw do
   get "showcase/Legend"
   get "showcase/Workwithus"
   get "showcase/Presse"
+  get "showcase/Mentions"
   get "maps/index"
   get "store/index"
   get "pointsofsale/index"
@@ -16,6 +17,7 @@ Depot::Application.routes.draw do
   get 'legend' => 'showcase#Legend'
   get 'workwithus' => 'showcase#Workwithus'
   get 'presse' => 'showcase#Presse'
+  get 'mentions' => 'showcase#Mentions'
   get 'store' => 'store#index'
   get 'maps' => 'maps#index'
   get 'video' => 'showcase#Video'
