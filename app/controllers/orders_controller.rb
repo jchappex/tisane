@@ -1,11 +1,26 @@
 class OrdersController < ApplicationController
   include CurrentCart
-  skip_before_action :admin_only, only: [:new, :create]
+  protect_from_forgery except: [:hook]
+  skip_before_action :admin_only, only: [:new, :create, :hook]
   before_action :set_cart, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user!,
+  except: [:hook]
   # GET /orders
   # GET /orders.json
+  
+  def hook
+    params.permit! # Permit all Paypal input params
+    status = params[:payment_status]
+    puts "****"
+    puts params.to_json
+    if status == "Completed"
+      puts "REUSSSSSI"
+      puts params.to_json
+    end
+    render nothing: true
+  end
+  
   def index
     @orders = Order.all
   end
@@ -43,11 +58,12 @@ class OrdersController < ApplicationController
     @cart = Cart.find(session[:cart_id])
     values = {
       business: "merchant@gotealeaf.com",
-      cmd: "_cart",
+      cmd: "_xclick",
       upload: '2',
       return: "https://tisane-jovien1.c9users.io/confirm/pay",
       cancel_return: "https://tisane-jovien1.c9users.io/cancel/pay",
       currency_code: 'EUR',
+      notify_url: "https://tisane-jovien1.c9users.io/hook"
     }
     @cart.line_items.each_with_index do |l, i|
       values["item_name_#{i+1}"] = l.product.title
