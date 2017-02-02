@@ -268,8 +268,10 @@ li:hover .class-menu > .elem-three{
 
 #topmenu { width: 150px; height: 50px; color: #fff; }
 
-#submenu {display: block;
+#submenu {
+  display: block;
 position: absolute;
+padding-bottom: 100px;
 top: 0;
 background: #fff;
 opacity: 0.9;

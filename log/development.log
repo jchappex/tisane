@@ -78523,3 +78523,2047 @@ Started GET "/assets/photo-back-section-2.jpg" for 127.0.0.1 at 2017-02-02 21:13
 
 
 Started GET "/assets/illu-front-section-2.jpg" for 127.0.0.1 at 2017-02-02 21:13:49 +0100
+
+
+Started GET "/home?locale=fr" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShowcaseController#Home as HTML
+  Parameters: {"locale"=>"fr"}
+  Rendered showcase/Home.html.erb within layouts/home (3.7ms)
+  [1m[35mCart Load (0.9ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/shared/_links.html.erb (0.4ms)
+Completed 200 OK in 300ms (Views: 165.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap-select.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/MyFontsWebfontsKit.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/customize-vertical-position.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/mouse.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/page-effect.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/pointsofsale.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/paraxify.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/showcase.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/paraxify.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/wow.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/jQuery.scrollSpeed.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/jquery.scrollme.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/pointsofsale.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/showcase.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/croix.png" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 22:59:04 +0100
+
+
+Started GET "/elem/le_benefique_movie.gif" for 127.0.0.1 at 2017-02-02 22:59:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.gif"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.8ms)
+
+
+Started GET "/elem/le_benefique_movie.jpg" for 127.0.0.1 at 2017-02-02 22:59:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.7ms)
+
+
+Started GET "/elem/le_benefique_movie.jpeg" for 127.0.0.1 at 2017-02-02 22:59:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpeg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.1ms)
+
+
+Started GET "/elem/le_benefique_movie.png" for 127.0.0.1 at 2017-02-02 22:59:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.4ms)
+
+
+Started GET "/elem/le_benefique_movie.gif" for 127.0.0.1 at 2017-02-02 22:59:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.gif"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.7ms)
+
+
+Started GET "/elem/le_benefique_movie.jpg" for 127.0.0.1 at 2017-02-02 22:59:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.1ms)
+
+
+Started GET "/elem/le_benefique_movie.png" for 127.0.0.1 at 2017-02-02 22:59:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.8ms)
+
+
+Started GET "/elem/le_benefique_movie.jpeg" for 127.0.0.1 at 2017-02-02 22:59:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpeg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.2ms)
+
+
+Started GET "/home?locale=fr" for 127.0.0.1 at 2017-02-02 23:01:40 +0100
+Processing by ShowcaseController#Home as HTML
+  Parameters: {"locale"=>"fr"}
+  Rendered showcase/Home.html.erb within layouts/home (0.7ms)
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered devise/shared/_links.html.erb (0.1ms)
+Completed 200 OK in 1313ms (Views: 1312.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-select.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/MyFontsWebfontsKit.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/customize-vertical-position.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/mouse.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/page-effect.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/paraxify.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/pointsofsale.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/showcase.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/paraxify.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/wow.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/jquery.scrollme.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/jQuery.scrollSpeed.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/pointsofsale.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/showcase.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/assets/croix.png" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+
+Started GET "/elem/le_benefique_movie.gif" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.gif"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.3ms)
+
+
+Started GET "/elem/le_benefique_movie.jpg" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.3ms)
+
+
+Started GET "/elem/le_benefique_movie.png" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.2ms)
+
+
+Started GET "/elem/le_benefique_movie.jpeg" for 127.0.0.1 at 2017-02-02 23:01:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpeg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.1ms)
+
+
+Started GET "/home?locale=fr" for 127.0.0.1 at 2017-02-02 23:01:50 +0100
+Processing by ShowcaseController#Home as HTML
+  Parameters: {"locale"=>"fr"}
+  Rendered showcase/Home.html.erb within layouts/home (0.5ms)
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered devise/shared/_links.html.erb (0.1ms)
+Completed 200 OK in 993ms (Views: 992.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-select.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/MyFontsWebfontsKit.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/customize-vertical-position.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/mouse.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/page-effect.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/pointsofsale.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/paraxify.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/showcase.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/paraxify.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/wow.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/jQuery.scrollSpeed.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/jquery.scrollme.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/pointsofsale.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/showcase.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 23:01:51 +0100
+
+
+Started GET "/assets/croix.png" for 127.0.0.1 at 2017-02-02 23:01:52 +0100
+
+
+Started GET "/elem/le_benefique_movie.gif" for 127.0.0.1 at 2017-02-02 23:01:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.gif"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.3ms)
+
+
+Started GET "/elem/le_benefique_movie.jpg" for 127.0.0.1 at 2017-02-02 23:01:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.2ms)
+
+
+Started GET "/elem/le_benefique_movie.jpeg" for 127.0.0.1 at 2017-02-02 23:01:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpeg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/elem/le_benefique_movie.png" for 127.0.0.1 at 2017-02-02 23:01:52 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.5ms)
+
+
+Started POST "/users/sign_in?locale=fr" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wl7z8TEIa2XiCHRlPW059jpgSxPateOSa0CNMPP2tyw=", "user"=>{"email"=>"yanisisma@msn.com", "password"=>"[FILTERED]"}, "commit"=>"Log in", "locale"=>"fr"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'yanisisma@msn.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Thu, 02 Feb 2017 19:57:44 UTC +00:00], ["current_sign_in_at", Thu, 02 Feb 2017 22:02:29 UTC +00:00], ["sign_in_count", 3], ["updated_at", Thu, 02 Feb 2017 22:02:29 UTC +00:00]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 65ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+Processing by ShowcaseController#Home as HTML
+  Rendered showcase/Home.html.erb within layouts/home (0.5ms)
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/shared/_links.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-select.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/MyFontsWebfontsKit.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/customize-vertical-position.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/mouse.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/page-effect.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:29 +0100
+
+
+Started GET "/assets/paraxify.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/pointsofsale.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/showcase.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/paraxify.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/wow.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/jQuery.scrollSpeed.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/jquery.scrollme.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/pointsofsale.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/showcase.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/assets/croix.png" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+
+Started GET "/elem/le_benefique_movie.gif" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.gif"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/elem/le_benefique_movie.jpeg" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpeg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.4ms)
+
+
+Started GET "/elem/le_benefique_movie.jpg" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.1ms)
+
+
+Started GET "/elem/le_benefique_movie.png" for 127.0.0.1 at 2017-02-02 23:02:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/le_benefique_movie.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.4ms)
+
+
+Started GET "/store?locale=fr" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"fr"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 1]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."product_line" = 1 ORDER BY "products".title ASC
+  Rendered store/index.html.erb within layouts/application (34.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/shared/_links.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap-select.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/MyFontsWebfontsKit.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/customize-vertical-position.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/mouse.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/page-effect.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/paraxify.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/pointsofsale.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/showcase.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/jquery.vide.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/paraxify.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/wow.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/jQuery.scrollSpeed.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/jquery.scrollme.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/pointsofsale.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/showcase.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/photo1.jpg" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/illu-front-section-1.png" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/photo-back-section-2.jpg" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/photo-back-section-1.png" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/illu-front-section-2.jpg" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+
+Started GET "/elem/illu-legend.jpg" for 127.0.0.1 at 2017-02-02 23:02:59 +0100
+
+ActionController::RoutingError (No route matches [GET] "/elem/illu-legend.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.5ms)
