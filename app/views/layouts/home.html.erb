@@ -27,34 +27,20 @@
         <li class="limen"><%= link_to 'POINTS DE VENTE', pointsofsale_path,  data: { no_turbolink: false } %></li>
         <li class="limen"><%= link_to 'TRAVAILLER AVEC NOUS', workwithus_path %></li>
         <li class="limen"><%= link_to 'CONTACT', contact_path %></li>
-        <li class="limen"><img src="/elem/Btn-langue.png" alt="bouton-langue" /></li>
-        <li class="limen"><%= link_to image_tag("/elem/shopping-bag.png", :class =>"panier-header-menu"), current_cart %></li>
-            <ul class="nav pull-right">
-              <div class="cart-count-menu">
-                <% if current_cart %>
-                  <li><%= current_cart.cart_count%></li>
-                <% end %>
-              </div>
-            </ul>
-            <% if current_user && current_user.admin? %>
-            <ul>
-              <li><%= link_to'Orders', orders_path %></li>
-              <li><%= link_to'Products', products_path %></li>
-              <li><%= link_to'Users', users_path %></li>
-              <li><%= link_to'Shops', maps_path %></li>
-            </ul>
-            <% end %>
-            <% if current_user %>
-              <li><p class="log-buttons"><%= button_to 'deconnexion', destroy_user_session_path, method: :delete %></p></li>
-            <% else %>
-              <li class="log-buttons"><p>
-                <a data-toggle="modal" data-target="#myModal2">INSCRIPTION / CONNEXION</a>
-              </p></li>
-            <%end %>
-            <li><%= link_to instagram_path do image_tag("/elem/insta.png", onmouseover: "this.src='#{asset_path('/elem/insta-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/insta.png')}'", width: '25') end %>
-              <%= link_to facebook_path do image_tag("/elem/facebook.png", onmouseover: "this.src='#{asset_path('/elem/facebook-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/facebook.png')}'", width: '13') end %>
-            </li>
-      <ul>
+        <li class="limen"> <%= link_to image_tag("/elem/shopping-bag.png", :class =>"panier-header-menu"), current_cart %></li>
+        <% if current_user && current_user.admin? %>
+        <li><%= link_to'Orders', orders_path %></li>
+        <li><%= link_to'Products', products_path %></li>
+        <li><%= link_to'Users', users_path %></li>
+        <li><%= link_to'Shops', maps_path %></li>
+        <% end %>
+        <% if current_user %>
+        <li><p class="log-buttons"><%= button_to 'deconnexion', destroy_user_session_path, method: :delete %></p></li>
+        <% else %>
+        <li class="log-buttons"><p><a data-toggle="modal" data-target="#myModal2">INSCRIPTION / CONNEXION</a></p></li>
+        <% end %>
+        <li><%= link_to instagram_path do image_tag("/elem/insta.png", onmouseover: "this.src='#{asset_path('/elem/insta-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/insta.png')}'", width: '25') end %><%= link_to facebook_path do image_tag("/elem/facebook.png", onmouseover: "this.src='#{asset_path('/elem/facebook-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/facebook.png')}'", width: '13') end %></li>
+      </ul>
       </div>
     </nav>
   <h1 class="top-title-menu"><%= yield(:title) %></h1>
@@ -71,7 +57,6 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Connexion / Inscription</h4>
       </div>
       <div class="modal-body">
         <div class="log-and-sign">
@@ -134,17 +119,7 @@
   </div>
 </div>
 <%= yield %>
-<div class="hover-footer">
-    <%= link_to image_tag("/elem/rectangle.png", :style =>"position:absolute; bottom:-22px;left: 50%", :class =>"hover-rect"), current_cart %>
-<footer class="footer-home">
-  <div class="fixed_right">
-    <a href="#">Conditions générales</a>
-    <a href="#">Mentions légales</a>
-    <a href="#">FAQ</a>
-    <a href="#">Crédits</a>
-    <a href="#">Kit presse</a>
-  </div>
-</footer>
+</div>
 </div>
 <script>
    handler = Gmaps.build('Google');

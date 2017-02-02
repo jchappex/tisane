@@ -45,7 +45,7 @@
           <div class="col-sm-5 col-sm-offset-1 col col-lg-3 col-lg-offset-1 product_img">
             <h3 class=""><%= product.title %></h3>
               <%= image_tag(product.image_url, :class => 'the_img') %>
-              <%= link_to( '#myModal#{index}',class: "%w(poplight discover", data: { toggle: "modal"}) do%>
+              <%= link_to('#myModal#{index}',class: "%w(poplight discover", data: { toggle: "modal"}) do%>
               <%= image_tag("/elem/decouvrir-shop.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-shop-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir-shop.png')}'", :style => "width:135px") %>
             <div id="myModal#{index}" class="modal fade" role="dialog">
               <div class="modal-dialog modal-lg">
