@@ -29,28 +29,28 @@
 
  .bloc-overlap h1{
   font-size: 28px;
-  z-index: 9999;
+  z-index: 2;
   color: black;
 }
 
 .title-sect{
   position: absolute;
   top: -50px;
-  z-index: 9999;
+  z-index: 3;
   font-family: 'Didot LT Std Italic';
 }
 
 @media screen and (max-width: 769px) {
   .bloc-overlap h1{
    font-size: 3vw;
-   z-index: 9999;
+   z-index: 2;
    color: black;
  }
 
  .title-sect{
    position: absolute;
    top: -50px;
-   z-index: 9999;
+   z-index: 3;
    font-family: 'Didot LT Std Italic';
  }
 
@@ -235,27 +235,6 @@ right: 0;
 	opacity: .80;
 	z-index: 299;
 }
-.popup_block{
-	display: none; /*--masqué par défaut--*/
-	background: #fff;
-	padding: 20px;
-	border: 20px solid #fff;
-	float: left;
-	font-size: 1.2em;
-	position: fixed;
-  width: 90vw;
-  height: 1000px;
-	top: 50%; left: 50vw;
-	z-index: 299;
-	/*--Les différentes définitions de Box Shadow en CSS3--*/
-	-webkit-box-shadow: 0px 0px 20px #000;
-	-moz-box-shadow: 0px 0px 20px #000;
-	box-shadow: 0px 0px 20px #000;
-	/*--Coins arrondis en CSS3--*/
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	border-radius: 1px;
-}
 img.btn_close {
 	float: right;
 	margin: -40px -30px 0 0;
@@ -266,30 +245,6 @@ a:hover{
   background-color: none;
 }
 
-.title-pop{
-  position: absolute;
-  display: block;
- top: 120px;
- font-size: 25px;
- font-family: 'Didot LT Std Italic';
- left: 0;
-}
-
-.popup-infusion{
-  top: -15px;
-  left: -40px;
-  font-size: 0.7vw;
-}
-
-.popup-img{
-  max-width: 500px;
-
-}
-
-.popup-logo{
-
-  max-width: 300px;
-}
 
 .container-temp{
   display: inline-block;
@@ -299,13 +254,17 @@ left: 10px;
 margin-right: -50px;
 }
 
+.modal-header{
+  border-bottom: 0;
+}
 
-.popup-product-zone{
+.modal-footer{
+  border-top: 0;
+}
+
+.modal-dialog p, h1, h2, h3, h4{
   text-align:left;
-  position: relative;
-  top: -380px;
-  right: 5vw;
-  margin-top: 50px;
+  border: 0;
 }
 
 .popup-title{
