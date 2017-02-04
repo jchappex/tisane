@@ -11,12 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161123181338) do
+ActiveRecord::Schema.define(version: 20170204170149) do
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "order_id"
+    t.integer  "user_id"
   end
+
+  add_index "carts", ["order_id"], name: "index_carts_on_order_id"
+  add_index "carts", ["user_id"], name: "index_carts_on_user_id"
 
   create_table "line_items", force: true do |t|
     t.integer  "product_id"
@@ -49,7 +54,10 @@ ActiveRecord::Schema.define(version: 20161123181338) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "paypal_customer_token"
+    t.integer  "cart_id"
   end
+
+  add_index "orders", ["cart_id"], name: "index_orders_on_cart_id"
 
   create_table "products", force: true do |t|
     t.string   "title"

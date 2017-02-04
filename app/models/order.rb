@@ -1,5 +1,6 @@
 class Order < ActiveRecord::Base
   has_many :line_items, dependent: :destroy
+  has_one :cart
 
   validates :name, :address, :email, presence: true
   validates :email, uniqueness: true
