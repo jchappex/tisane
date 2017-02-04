@@ -1,5 +1,4 @@
-<html>
-  <head>
+
     <style media="screen">
       html, body {
         height: 100%;
@@ -8,8 +7,6 @@
         background-position:top;
         }
     </style>
-  </head>
-  <body>
     <% if notice %>
       <p id="notice"><%= notice %></p>
     <% end %>
@@ -189,7 +186,6 @@
           //Récupération du margin, qui permettra de centrer la fenêtre - on ajuste de 80px en conformité avec le CSS
           var popMargTop = ($('#' + popID).height() + 80) / 2;
           var popMargLeft = ($('#' + popID).width() + 80) / 2;
-
           //Apply Margin to Popup
           $('#' + popID).css({
             'margin-top' : -popMargTop,
@@ -202,8 +198,6 @@
 
           return false;
         });
-
-
         //Close Popups and Fade Layer
         $('body').on('click', 'a.close, #fade', function() { //Au clic sur le body...
           $('#fade , .popup_block').fadeOut(function() {
@@ -213,5 +207,3 @@
         });
       });
     </script>
-  </body>
-  </html>

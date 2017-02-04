@@ -27,9 +27,9 @@ class LineItemsController < ApplicationController
   # POST /line_items.json
   def create
     session[:counter] = 0
-    quantity = params[:quantity]
+    quantity = params[:quantity][:quantity].to_i
     product = Product.find(params[:product_id])
-    @line_item = @cart.add_product(product.id)
+    @line_item = @cart.add_product(product.id, quantity)
 
     respond_to do |format|
       if @line_item.save

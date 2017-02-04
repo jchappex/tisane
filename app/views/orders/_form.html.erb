@@ -10,22 +10,52 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, size: 40 %>
+  <div class="form-inputs">
+    <div class="form-group required">
+      <%= f.label :nom, class: "control-label" %><br>
+      <%= f.text_field :name, size: 40, class: "form-control" %>
+    </div>
+    <%= f.hidden_field :email, value: current_user.email, size: 40, class: "form-control" %>
+    <div class="form-group required">
+      <%= f.label :address, class: "control-label" %><br>
+      <%= f.text_area :address, rows: 3, cols: 40, id: 'autocomplete', class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_area :address, rows: 3, cols: 40 %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email, size: 40 %>
-  </div>
-  <div class="actions">
+  <div class="form-actions">
     <div id="paypal_checkout">
       <%= link_to image_tag("https://www.paypal.com/fr_XC/i/btn/btn_xpressCheckout.gif"), paypal_checkout_path(:cart_id => session[:cart_id])%>
-    <%= f.submit 'Place Order'%>
+      <%= f.submit 'Place Order'%>
+    </div>
   </div>
 <% end %>
+<script>
+  function initAutocomplete() {
+    // Create the autocomplete object, restricting the search to geographical
+    // location types.
+    autocomplete = new google.maps.places.Autocomplete(
+        (document.getElementById('autocomplete')),
+        {types: ['geocode']});
+    autocomplete.addListener('place_changed', fillInAddress);
+  }
+
+  function fillInAddress() {
+    // Get the place details from the autocomplete object.
+    var place = autocomplete.getPlace();
+  
+    for (var component in componentForm) {
+      document.getElementById(component).value = '';
+      document.getElementById(component).disabled = false;
+    }
+  
+    // Get each component of the address from the place details
+    // and fill the corresponding field on the form.
+    for (var i = 0; i < place.address_components.length; i++) {
+      var addressType = place.address_components[i].types[0];
+      if (componentForm[addressType]) {
+        var val = place.address_components[i][componentForm[addressType]];
+        document.getElementById(addressType).value = val;
+      }
+    }
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChlLKUJvuUVdSkBvg7Mf1UhdjRoMyRPjs&libraries=places&callback=initAutocomplete"></script>

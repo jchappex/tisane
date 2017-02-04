@@ -23,7 +23,12 @@ Depot::Application.routes.draw do
   get 'video' => 'showcase#Video'
   get 'summary' => 'orders#summary'
   get 'contact' => 'contacts#new'
+
   get 'paypal/checkout', to:'orders#paypal_checkout'
+  post '/hook' => "orders#hook"
+  get '/confirm/pay', to: 'orders#confirm_pay'
+  get '/confirm/cancel', to: 'orders#cancel_pay'
+
   get "instagram" => redirect("https://www.instagram.com/lebenefique/")
   get "facebook" => redirect("https://www.facebook.com/infusionslebenefique/?fref=ts")
   devise_for :users
