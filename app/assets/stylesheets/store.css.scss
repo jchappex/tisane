@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 769px) {
   .bloc-overlap h1{
-   font-size: 3vw;
+   font-size: 3.5vw;
    z-index: 2;
    color: black;
  }
@@ -74,13 +74,13 @@
 }
 
 .img_soli{
-  bottom: 100px;
+  top: 50px;
 }
 
 
 .bloc-overlap{
   position: absolute;
-  bottom: 8%;
+
 
 }
 
@@ -89,13 +89,19 @@
   position: absolute;
   font-family: 'Didot LT Std Bold Italic';
   text-align: left;
-  bottom: 15%;
+  bottom: 24%;
   font-size: 2vw;
   color: white;
   z-index: 2;
 }
 
-@media screen and (min-width: 1150px) {
+.txt-mobile-shop{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1205px) {
   .txt_soli{
     font-size: 25px;
   }
@@ -114,9 +120,15 @@
   text-align: left;
 }
 
+.product_img{
+  padding: 0;
+}
+
 .product_title{
-  width: 250px;
-  font-family: 'Futura Condensed Medium';
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -133,17 +145,9 @@ overflow: hidden;
 text-overflow: ellipsis;
 }
 
-
-.product_img{
-    width: auto;
-}
-
 .the_img{
-  padding: 0;
-  margin: 0;
   position: relative;
-    width: 280px;
-    max-width: 280px;
+  width: 100%;
 }
 
 .the_img:hover + .discover{
@@ -266,9 +270,10 @@ margin-right: -50px;
   border-top: 0;
 }
 
-.modal-dialog p, h1, h2, h3, h4{
+.modal-dialog{
+   p, h1, h2, h3, h4{
   text-align:left;
-  border: 0;
+  border: 0;}
 }
 
 .popup-title{
