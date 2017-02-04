@@ -16,10 +16,9 @@
   						<%= link_to store_path do
   							image_tag("/elem/decouvrir.png", onmouseover: "this.src='#{asset_path('/elem/decouvrir-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/decouvrir.png')}'", width: '132')
   					end %>
-  					<button class="button-film" type="button" data-toggle="modal" data-target="#myModal">
+  					<button class="button-film" type="button" data-toggle="modal" data-target="#myModal" onclick="play();" value="play">
               <%= image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132') %>
             </button>
-						<a class="afterglow" href="#myvideo">Launch lightbox</a>
   				 		<%#= link_to video_path do
        					image_tag("/elem/le-film.png", onmouseover: "this.src='#{asset_path('/elem/le-film.png')}'", onmouseout: "this.src='#{asset_path('/elem/le-film.png')}'", width: '132')
   				 	end %>
@@ -31,22 +30,28 @@
 <!--		<script src="bootstrap/js/jquery.vide.js"></script>-->
 
 <!-- Modal -->
-<video id="myvideo" width="960" height="540">
-  <source type="video/mp4" src="/elem/Le_Benefique_2560p_1.mp4" />
-</video>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="width: 100%; height: 100%;margin:0;padding:0;">
     <div class="modal-content" style="width: 100%; height: 100%;margin:0;padding:0;border-radius:0;">
       <div class="modal-body" style="height:100%;width:100%;margin:0;padding:0; position:relative; overflow:hidden;">
-				<button type="button" style="color:blue; margin-bottom:-150px;z-index:9999;position:absolute;" id="close-video" class="close close-video" data-dismiss="modal" aria-label="Close">
+				<button type="button" style="color:blue; margin-bottom:-150px;z-index:9999;position:absolute;" id="close-video" class="close close-video" data-dismiss="modal" aria-label="Close" onclick="pause();"  value="pause">
 					<span aria-hidden="true"><%=image_tag("croix.png")%></span>
 				</button>
-        <video autoplay id="video-modal" style="height: 100%;width: 177.77777778vh; min-width: 100%;min-height: 56.25vw; position: absolute;left: 50%; top: 50%;transform: translate(-50%, -50%);">
+        <video id="video-modal" style="height: 100%;width: 177.77777778vh; min-width: 100%;min-height: 56.25vw; position: absolute;left: 50%; top: 50%;transform: translate(-50%, -50%);">
 	        <source src="/elem/Le_Benefique_2560p_1.mp4" type="video/mp4">
 		    </video>
       </div>
     </div>
 	</div>
 </div>
+<script>
+function play() {
+	console.log('a');
+$('#video-modal')[0].play();
+}
+function pause() {
+$('#video-modal')[0].pause();
+}
+</script>
 	</body>
 </html>

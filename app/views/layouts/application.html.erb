@@ -38,6 +38,9 @@ new WOW().init();
           <li><%= link_to'Users', users_path %></li>
           <li><%= link_to'Shops', maps_path %></li>
           <% end %>
+          <% if current_user && !current_user.admin? %>
+          <li class="limen"><a href="#">MON COMPTE</a></li>
+          <% end %>
           <% if current_user %>
           <li><p class="log-buttons"><%= button_to 'deconnexion', destroy_user_session_path, method: :delete %></p></li>
           <% else %>

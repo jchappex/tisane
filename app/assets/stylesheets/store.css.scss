@@ -218,6 +218,10 @@ right: 0;
 }
 }
 
+.product-price{
+  float: left;
+}
+
 
 .discover {
   display: none;
@@ -322,7 +326,6 @@ font-family: 'Futura Condensed Light';
 
 .popup-add{
   width: 120px;
-  position: relative;
   top: -20px;
   right: -60px;
 }

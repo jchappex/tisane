@@ -266,7 +266,6 @@ li:hover .class-menu > .elem-three{
   }
 }
 
-#topmenu { width: 150px; height: 50px; color: #fff; }
 
 #submenu {
   display: block;
@@ -293,6 +292,10 @@ li{
   font-weight: 500;
   margin-bottom: 20px;
 }
+}
+
+.log-buttons{
+  color: black;
 }
 
 #topmenu:hover #submenu {
