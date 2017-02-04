@@ -63,6 +63,7 @@
                         <h4 class=""> PROPRIÉTÉS </h4>
                         <p class=""><%= sanitize(product.proprietes, :class =>'')%></p>
                         <div class="">
+<<<<<<< HEAD
                           <span class="product-price"><%=number_to_currency(product.price)%></span><br/>
                           <%= form_for(:quantity, url: line_items_path(product_id: product), remote: true) do |form| %>
                             <div>
@@ -70,6 +71,15 @@
                               <p><%= form.select :quantity, (1..10) %></p><br/>
                               <p><%= image_submit_tag("/elem/Btn-add.png", onmouseover: "this.src='#{asset_path('/elem/Btn-add-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-add.png')}'",:class =>"popup-add") %></p>
                             </div>
+=======
+                          <span class=""><%=number_to_currency(product.price)%></span><br/>
+                          <%= form_for(:quantity, url: line_items_path(product_id: product)) do |form| %>
+                            <p>
+                              <%= form.label :Qté%>
+                              <%= form.select :quantity, (1..10) %>
+                              <%= image_submit_tag("/elem/Btn-add.png", onmouseover: "this.src='#{asset_path('/elem/Btn-add-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-add.png')}'",:class =>"popup-add") %>
+                            <p>
+>>>>>>> 2b263f2ac2289e09ba9533a07d80c852af9f04e2
                           <% end %>
                         </div>
                     </div>

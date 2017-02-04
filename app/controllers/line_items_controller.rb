@@ -26,6 +26,7 @@ class LineItemsController < ApplicationController
   # POST /line_items
   # POST /line_items.json
   def create
+    puts "CA DEMARRRE CA"
     session[:counter] = 0
     quantity = params[:quantity][:quantity].to_i
     product = Product.find(params[:product_id])
