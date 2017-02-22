@@ -11,40 +11,45 @@
     </div>
   <% end %>
 
-  <div class=" field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+  <div class=" form-group">
+    <%= f.label :title, class: "control-label" %><br>
+    <%= f.text_field :title, class: "form-control"  %>
   </div>
-  <div class="field">
-    <%= f.label :nomlatin %><br>
-    <%= f.text_field :nomlatin %>
+  <div class="form-group">
+    <%= f.label :nomlatin, class: "control-label" %><br>
+    <%= f.text_field :nomlatin, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :provenance %><br>
-    <%= f.text_field :provenance %>
+  <div class="form-group">
+    <%= f.label :provenance, class: "control-label" %><br>
+    <%= f.text_field :provenance, class: "form-control" %>
   </div>
-
-  <div class="field">
-    <%= f.label :proprietes %><br>
-    <%= f.text_area :proprietes %>
+  <div class="form-group">
+    <%= f.label :proprietes, class: "control-label" %><br>
+    <%= f.text_area :proprietes, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+  <div class="form-group">
+    <%= f.label :description, class: "control-label" %><br>
+    <%= f.text_area :description, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :image_url %><br>
-    <%= f.text_field :image_url %>
+  <div class="form-group">
+    <%= f.label :image_url, class: "control-label" %><br>
+    <%= f.text_field :image_url, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
+  <div class="form-group">
+    <%= f.label :price, class: "control-label" %><br>
+    <%= f.text_field :price, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :product_line %><br>
-    <%= f.text_field :product_line %>
+  <div class="form-group">
+    <%= f.label :product_line, class: "control-label" %><br>
+    <%= f.text_field :product_line, class: "form-control" %>
   </div>
-  <div class="actions">
+  <div class="form-actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>
+</div>
+</div>

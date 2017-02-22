@@ -353,18 +353,19 @@ a {color: #FF0}
   }
 
   .header-app{
+
     padding-bottom: 110px;
     border-bottom: 1px solid black;
   }
 
   .header-zone{
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     height: 110px;
     background: white;
     color: black;
-    z-index: 9999;
+    z-index: 97;
   }
 
   .top-title-menu{

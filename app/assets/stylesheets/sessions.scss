@@ -12,3 +12,37 @@
     padding-left: 25px;
   }
 }
+
+.nav-profil{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    li{
+        display:inline;
+    }
+    a{
+        display:inline-block;
+        padding:10px;
+    }
+}
+
+.my-board, .my-profile, .my-commands{
+  text-align: left;
+}
+
+.my-profile, .my-commands{
+  display: none;
+}
+
+.my-board{
+  img{width: 110px;}
+  td, th{padding: 6px;}
+  .tables{border-top: 1px solid black;}
+}
+
+.my-profile{
+  text-align: left;
+}
