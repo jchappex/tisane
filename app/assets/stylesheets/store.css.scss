@@ -1,4 +1,8 @@
-
+@media screen and (min-width: 769px) {
+  .modal-product{
+    width: 80%;
+  }
+}
 .bloc-center h1{
   font-family: 'DidotLTStd-BoldItalic';
 font-weight: 500;
@@ -26,11 +30,11 @@ font-size: 40px;
   top: 10%;
 }
 
-.logo_img{
-  position: absolute;
-  top: 20px;
-  width: 250px;
+.product_img{
+  padding: 0;
+  margin-left: 4.16%;
 }
+
 
 
  .shop-header-container h1{
@@ -44,6 +48,10 @@ font-size: 40px;
 @media screen and (max-width: 769px) {
  .shop-header-container{
    margin-top: 200px;
+ }
+ .product_img{
+   padding: 0;
+   margin-left: 6.16%;
  }
 }
 
@@ -105,11 +113,6 @@ margin-left: 8.3333%;
 }
 }
 
-.product_img{
-  padding: 0;
-  margin-left: 4.16%;
-}
-
 .product_title{
 
   font-family: 'DidotLTStd-BoldItalic';
@@ -145,7 +148,7 @@ text-overflow: ellipsis;
 .the_img:hover + .discover{
   width: 100%;
   display: block;
-  font-family: 'Didot LT Std Roman';
+  font-family: 'DidotLTStd-BoldItalic';
   font-size: 18px;
   position: absolute;
   margin: auto;
@@ -159,7 +162,7 @@ text-overflow: ellipsis;
 
 .the_img + .discover:hover{
   display: block;
-  font-family: 'Didot LT Std Roman';
+font-family: 'DidotLTStd-BoldItalic';
   font-size: 18px;
   position: absolute;
   margin: auto;
@@ -273,12 +276,47 @@ margin-right: -50px;
   border: 0;}
 }
 
+.popup-img{
+  max-width: 400px;
+}
+
+@media screen and (max-width: 991px) {
+  .popup-body-mobile{
+    h1,h2,h3,p,span,label,select{
+    text-align: center;
+    float: none;}
+  }
+
+  .mobile-popup-title{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vw;
+    font-weight: 480;
+    letter-spacing: 4px;
+  }
+}
+
+
+.popup-title{
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 480;
+  letter-spacing: 4px;
+}
+
 .popup-nomlatin{
   color: #b6a083;
   font-size: 18px;
-  font-family: 'Didot LT Std Bold Italic';
+  font-family: 'DidotLTStd-BoldItalic';
 }
 
+.popup-legende{
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
 
 .popup-add{
   width: 120px;

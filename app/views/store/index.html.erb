@@ -68,21 +68,26 @@ Née d’une alliance franco-turque, la marque est muée par une volonté d’é
               <% end %>
             </div>
             <div id="myModal<%=index%>" class="modal fade" role="dialog">
-              <div class="modal-dialog modal-lg">
+              <div class="modal-dialog modal-product" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                    <p><%=image_tag("logo.png", :class => ' col-xs-4 col-xs-offset-4')%></p>
+                    <div class="img-top margin-img logo-modal">
+                      <%= link_to image_tag("/elem/logo2.png"), home_path %>
+                  </div>
                   </div>
                   <div class="modal-body">
-                    <%= image_tag(product.image_url, :class => 'offset-sect-1 col-xs-offset-1 col-xs-5') %>
-                    <div class="offset-sect-1 col-xs-4 col-xs-offset-0">
-                       <h2 class=""><%=product.title%><p class="popup-nomlatin"><%=product.nomlatin%></p></h2>
+                    <div class="hidden-xs">
+                    <%= image_tag(product.image_url, :class => 'offset-sect-1 col-xs-offset-2 col-xs-4 popup-img') %>
+                    <div class="offset-lin-15 col-xs-4 col-xs-offset-1">
+                       <h2 class="popup-title"><%=product.title%></h2>
+                        <p class="popup-nomlatin"><%=product.nomlatin%></p>
+                        <p class="popup-provenance"><%=product.provenance%></h2>
                         <p class=""> Certifié biologique par Ecocert </p>
+                        <h3 class="popup-legende"> LÉGENDE </h3>
                         <p class=""><%= sanitize(product.description, :class =>'')%></p>
-                        <h4 class=""> PROPRIÉTÉS </h4>
                         <p class=""><%= sanitize(product.proprietes, :class =>'')%></p>
                         <div class="">
                           <span class="product-price"><%=number_to_currency(product.price)%></span><br/>
@@ -96,8 +101,31 @@ Née d’une alliance franco-turque, la marque est muée par une volonté d’é
                         </div>
                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <div class="col-xs-12 col-xs-offset-0">
+                  <div class="visible-xs popup-body-mobile">
+                    <h2 class="mobile-popup-title col-xs-10 col-xs-offset-1 offset-sect-2"><%=product.title%></h2>
+                     <p class="popup-nomlatin col-xs-4 col-xs-offset-4"><%=product.nomlatin%></p>
+                  <%= image_tag(product.image_url, :class => 'offset-sect-1 col-xs-offset-1 col-xs-10 mobile-popup-img') %>
+                  <div class="offset-lin-15 col-xs-10 col-xs-offset-1 mobile-popup-txt">
+                      <p class="popup-provenance"><%=product.provenance%></h2>
+                      <p class=""> Certifié biologique par Ecocert </p>
+                      <h3 class=""> LÉGENDE </h3>
+                      <p class=""><%= sanitize(product.description, :class =>'')%></p>
+                      <p class=""><%= sanitize(product.proprietes, :class =>'')%></p>
+                      <div class="">
+                        <span class="product-price"><%=number_to_currency(product.price)%></span><br/>
+                        <%= form_for(:quantity, url: line_items_path(product_id: product)) do |form| %>
+                          <div>
+                            <p><%= form.label :Quantité%></p>
+                            <p><%= form.select :quantity, (1..10) %></p><br/>
+                            <p><%= image_submit_tag("/elem/Btn-add.png", onmouseover: "this.src='#{asset_path('/elem/Btn-add-hover.png')}'", onmouseout: "this.src='#{asset_path('/elem/Btn-add.png')}'",:class =>"popup-add") %></p>
+                          </div>
+                        <% end %>
+                      </div>
+                  </div>
+                </div>
+                  </div>
+                  <div class="modal-footer" >
+                    <div class="col-xs-10 col-xs-offset-1 col-lg-9 col-lg-offset-2">
                         <hr>
                         <p><b> ENGAGEMENTS LE BÉNÉFIQUE</b><p>
                         <br>
